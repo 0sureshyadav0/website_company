@@ -359,3 +359,7 @@ function getSelectedTheme() {
     document.querySelector(":root").classList.remove("lightgreen");
   }
 }
+
+setTimeout(() => {
+  document.querySelector("#theme").style.visibility = "visible";
+}, 10000);
