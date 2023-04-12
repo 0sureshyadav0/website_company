@@ -2681,7 +2681,6 @@ nav#primary-navigation.isDark {
   color: white;
   z-index: 1;
   visibility: hidden;
-  transition: 2s;
 }
 
 @media only screen and (max-width: 470px) {
