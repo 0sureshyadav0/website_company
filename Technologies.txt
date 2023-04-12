@@ -1,0 +1,5 @@
+1. NextJs
+2. Prisma
+3. PostGres
+4. Node
+5. express

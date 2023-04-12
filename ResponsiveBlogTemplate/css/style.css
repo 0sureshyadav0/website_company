@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Alkatra", cursive;
+}
+
+.navigation {
+  margin-top: 25px;
+  font-family: var(--font1);
+  /* height: 74px;  */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left {
+  display: flex;
+}
+
+.nav-left span {
+  font-size: 35px;
+  padding-top: 10px;
+}
+
+.nav-left ul {
+  display: flex;
+  align-items: center;
+  margin: 0 77px;
+  font-size: 22px;
+  padding-bottom: 23px;
+}
+
+.nav-left ul li {
+  list-style: none;
+  margin: 0 14px;
+  font-family: var(--font2);
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-left ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-left ul li a:hover {
+  color: var(--main-bg-color);
+  font-weight: bolder;
+}
+
+.content {
+  height: 100%;
+  display: flex;
+  margin-top: 32px;
+  padding: 9px;
+  position: relative;
+}
+
+.content::after {
+  content: "";
+  background-image: url("../img/11.svg");
+  position: absolute;
+  width: 100%;
+  height: inherit;
+  opacity: 0.15;
+  border-radius: 12px;
+}
+
+.content-left {
+  font-family: var(--font1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 49px;
+  z-index: 1;
+}
+
+.content-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-right img {
+  height: 355px;
+  border: 2px solid black;
+  border-radius: 200px;
+}
+
+.home-articles {
+  /* display: flex; */
+  padding: 18px;
+  background-color: #196fc2;
+  margin-top: 23px;
+  position: relative;
+  /* width: 100%; */
+}
+
+.year-box {
+  position: absolute;
+  right: 0px;
+  top: 100px;
+  width: 234px;
+  height: 255px;
+  font-size: 18px;
+}
+
+.year-box div {
+  margin: 12px 0px;
+}
+
+.home-article {
+  display: flex;
+  margin: 25px;
+  background-color: rgb(248, 239, 239, 0.5);
+  width: 95%;
+  height: 15rem;
+}
+.home-article-img {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 30%;
+  margin: 1rem;
+}
+.home-article img {
+  height: 100%;
+  width: 100%;
+}
+
+.home-article-content {
+  align-self: center;
+  padding: 25px;
+  width: 70%;
+}
+.title {
+  font-size: 1.8rem;
+}
+.home-article-content a {
+  text-decoration: none;
+  color: black;
+}
+/* .home-articles{} */
+.footer {
+  height: 50px;
+  background-color: var(--main-bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-direction: column;
+}
+/* .nav-right {
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+} */
+#nav-container {
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  height: 3.8rem;
+  width: 100%;
+}
+.site-logo {
+  display: flex;
+  justify-content: end;
+  width: 15%;
+  text-transform: uppercase;
+  padding: 0.7rem 3rem 0 0;
+  background-color: #004b91;
+  color: white;
+  font-size: 1.6rem;
+  font-family: "Playfair Display";
+}
+.right-nav {
+  width: 80%;
+  height: 3.8rem;
+  background-color: #196fc2;
+}
+form {
+  /* height: 3.8rem; */
+  display: flex;
+  justify-content: end;
+  /* justify-items: center; */
+}
+form input {
+  margin: 1rem;
+}
+.home-articles {
+  margin-top: 8rem;
+  margin-bottom: 3rem;
+}

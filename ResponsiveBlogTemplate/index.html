@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/utils.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
+    <title>Suresh Yadav -> Blogs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/responsive.css">
+  </head>
+
+  <body>
+  <div id="nav-container"> 
+    <div class="site-logo">Suresh</div>
+    <div class="right-nav">
+      <!-- <form>
+        <div class="form-group">
+          <label for="input"></label>
+          <input type="text" name="input" id="input">
+        </div>
+        <div class="form-group">
+          <label for="button"></label>
+          <input type="button" value="Search">
+        </div>
+      </form> -->
+    </div>
+  </div>
+    <!-- <nav class="navigation max-width-1 m-auto"> -->
+    <!-- <div class="nav-left">
+        <a href="/">
+          <span><img src="img/logo.png" width="94px" alt="" /></span>
+        </a>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </div> -->
+
+    <!-- </nav> -->
+
+    <!-- <div class="max-width-1 m-auto"> -->
+    <!-- <hr /> -->
+    <!-- </div> -->
+    <!-- <div class="m-auto content max-width-1 my-2">
+        <div class="content-left">
+            <h1>The heaven for bloggers</h1>
+            <p>iBlog is a website which lets you submit an article which upon approval will be up on our website and you
+                can get a good amount of reach from here!</p>
+            <p>My Halloween decorations are staying in the box this year. To be honest, they didn’t make it out of the
+                box last year either. My Halloween spirit has officially been bludgeoned to death by teenagers who no
+                longer care and a persistent October fear of the Northern California wildfires. And speaking of fear,
+                isn’t there more than enough of that going around? Maybe all of us can pretend that Halloween isn’t even
+                happening this year?</p>
+        </div>
+        <div class="content-right">
+            <img src="img/home.svg" alt="iBlog">
+        </div>
+    </div> -->
+
+    <div class="max-width-1 m-auto">
+      <hr />
+    </div>
+    
+    <div class="home-articles max-width-1 m-auto font2 blogList">
+      
+      
+      <!-- <div class="nav-right float-right">
+        <form action="/search.html" method="get">
+          <input
+            class="form-input"
+            type="text"
+            name="query"
+            placeholder="Article Search"
+          />
+          <button class="btn">Search</button>
+        </form>
+      </div> -->
+    <!-- <div class="footer">
+      <p>Copyright &copy; iBlog.com</p>
+      <a href="https://www.vecteezy.com/free-vector/typewriter"
+        >Vector Credits: Vecteezy</a
+      >
+    </div> -->
+    <script src="js/data.js"></script>
+    <script src="/blogs/data.js"></script>
+    <script src="/blogs/script.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+   buildHomeArticles(blogData);
+let blogList = document.querySelectorAll(".home-article");
+let blogListLength = blogList.length;
+console.log(blogListLength);
+blogList.forEach((blog, index) => {
+  blog.addEventListener("click", () => {
+    var blogIndex = Array.from(blogList).indexOf(blog);
+    console.log("Index is: "+blogIndex);
+  });
+});
+     
+      // for(let i=0;i<document)
+    </script>
+  </body>
+</html>
