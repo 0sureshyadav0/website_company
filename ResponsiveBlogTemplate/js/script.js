@@ -119,7 +119,7 @@ const buildHomeArticles = (data) => {
       "<br>" +
       category +
       "</div>" +
-      "</div><br>";
+      "</div><br><br>";
   }
   element.innerHTML = html;
 };
