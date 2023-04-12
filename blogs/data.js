@@ -2,7 +2,7 @@ const blogData = [
   {
     id: 0,
     imgLink:
-      " https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1274&q=80",
+      "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/MSFT-1125-SQL_Server_2022_web_blade_image_RWWaqg:VP1-539x440?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=1920&hei=600&qlt=100&fmt=png-alpha&fit=constrain",
     title: " SQL Language",
     subtitle: " Web Development",
     date: " 07 March 2023",
@@ -221,10 +221,10 @@ WHERE condition;
   {
     id: 1,
     imgLink:
-      " https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1274&q=80",
-    title: " Second ",
+      "https://webimages.mongodb.com/_com_assets/cms/kuzt9r42or1fxvlq2-Meta_Generic.png",
+    title: " MongoDB ",
     subtitle: " Web Development",
-    date: " 07 March 2023",
+    date: " 05 April 2023",
     authorName: " Suresh Yadav",
     author_post: " Full Stack Software Engineer",
     authorLink: "https:sureshyadav.info.np",

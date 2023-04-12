@@ -83,36 +83,36 @@ const buildBlogDescription = (blogData) => {
       description,
     } = blogData[i];
     // console.log(readtxt);
-    if (id == 1) {
-      html +=
-        "<span class='blog-title'>" +
-        title +
-        "</span><br><span class='blog-subtitle'><i class='fa fa-user'></i><span class='author-name'> " +
-        authorName +
-        "</span> | <span class='author-post'>" +
-        author_post +
-        "</span><br> <span class='subtitle'> <i class='fa fa-clock'></i> " +
-        date +
-        " - " +
-        readTime +
-        `<i class='fa fa-play' style='margin-left:1rem;cursor:pointer;' onclick='speak("Hi, Welcome to Appazon. Before you start listening the blog post, its important to be in a good position to ensure your comfort and focus. Be ready. This blog belongs to ` +
-        authorName +
-        `. a ` +
-        author_post +
-        `. about ` +
-        title +
-        ". posted on " +
-        date +
-        ". Lets begin body section." +
-        readTxt +
-        ". Thanks for listening carefully. Now, its your turn to share the link to your colleagues or friends. So, that they can be updated about this post as well as different technology." +
-        `");'></i><i class='fa fa-pause' style='margin-left:1rem; cursor:pointer;' onclick='pause()'></i>` +
-        `<i class='fa fa-stop' style='margin-left:1rem; cursor:pointer;' onclick='stop()'></i>` +
-        "</span></span><hr><span class='blog-description'>" +
-        description +
-        "</span><br>";
-    }
+
+    html +=
+      "<span class='blog-title'>" +
+      title +
+      "</span><br><span class='blog-subtitle'><i class='fa fa-user'></i><span class='author-name'> " +
+      authorName +
+      "</span> | <span class='author-post'>" +
+      author_post +
+      "</span><br> <span class='subtitle'> <i class='fa fa-clock'></i> " +
+      date +
+      " - " +
+      readTime +
+      `<i class='fa fa-play' style='margin-left:1rem;cursor:pointer;' onclick='speak("Hi, Welcome to Appazon. Before you start listening the blog post, its important to be in a good position to ensure your comfort and focus. Be ready. This blog belongs to ` +
+      authorName +
+      `. a ` +
+      author_post +
+      `. about ` +
+      title +
+      ". posted on " +
+      date +
+      ". Lets begin body section." +
+      readTxt +
+      ". Thanks for listening carefully. Now, its your turn to share the link to your colleagues or friends. So, that they can be updated about this post as well as different technology." +
+      `");'></i><i class='fa fa-pause' style='margin-left:1rem; cursor:pointer;' onclick='pause()'></i>` +
+      `<i class='fa fa-stop' style='margin-left:1rem; cursor:pointer;' onclick='stop()'></i>` +
+      "</span></span><hr><span class='blog-description'>" +
+      description +
+      "</span><br>";
   }
+
   element.innerHTML = html;
 };
 // `<i class='fa fa-play' style='margin-left:1rem;cursor:pointer;color:yellow;' onclick='speak("Hi, Welcome to Appazon's world. Before you start listening the blog post, it's important to be in a good position to ensure your comfort and focus. This blog belongs to "` +

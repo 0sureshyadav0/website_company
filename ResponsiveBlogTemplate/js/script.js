@@ -89,9 +89,11 @@ const buildHomeArticles = (data) => {
       `');">` +
       "</div>" +
       "<div class='home-article-content font1'>" +
-      "<a href='/blogs/index.html' id=='" +
-      id +
-      "'> " +
+      // "<a href='/blogs/Post" +
+      // 1 +
+      // ".html' id=='" +
+      // id +
+      // "'> " +
       "<span class='title' >" +
       title +
       "</span>" +

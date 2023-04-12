@@ -96,7 +96,8 @@ console.log(blogListLength);
 blogList.forEach((blog, index) => {
   blog.addEventListener("click", () => {
     var blogIndex = Array.from(blogList).indexOf(blog);
-    console.log("Index is: "+blogIndex);
+    console.log(blogIndex)
+    window.open("./Posts/Post"+blogIndex+".html","_self");
   });
 });
      
