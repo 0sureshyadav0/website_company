@@ -1,0 +1,156 @@
+.blogs-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 3.8rem;
+  position: fixed;
+  background-color: #196fc2;
+  width: 100%;
+}
+.site-logo:before {
+  content: "";
+  position: absolute;
+  width: 2000px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: #004b91;
+}
+.site-logo a {
+  font-family: "Playfair Display";
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  transition: 2s alternate;
+  animation-duration: 0.8s;
+  width: 80vw;
+  background-color: #196fc2;
+  justify-content: end;
+  overflow: hidden;
+}
+@keyframes start-slide {
+  from {
+    height: 0px;
+  }
+  to {
+    height: 370px;
+  }
+}
+@keyframes end-slide {
+  from {
+    height: 370px;
+  }
+  to {
+    height: 0px;
+  }
+}
+.nav li {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav li a {
+  font-family: "Alkatra";
+  text-decoration: none;
+}
+
+#hamburger {
+  position: relative;
+  display: block;
+  width: 35px;
+  cursor: pointer;
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+}
+#hamburger .bar,
+#hamburger:after,
+#hamburger:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0px;
+  transition: 0.4s;
+}
+
+#hamburger.is-active:before {
+  transform: rotate(-45deg) translate(-8px, 6px);
+}
+#hamburger.is-active .bar {
+  opacity: 0;
+}
+#hamburger.is-active:after {
+  transform: rotate(45deg) translate(-9px, -8px);
+}
+
+#left-container {
+  border: 1px solid#196fc2;
+  color: #196fc2;
+  border-radius: 0.5rem;
+  margin: 1rem;
+  padding: 0.1rem;
+}
+#left-container li a {
+  text-decoration: none;
+  color: #196fc2;
+  font-family: "Playfair Display";
+}
+#right-container {
+  border-radius: 0.5rem;
+  color: rgb(240, 238, 238);
+  margin: 1rem;
+  background-color: #196fc2;
+}
+#content {
+  padding: 1rem;
+  text-align: justify;
+  font-family: "Alkatra", cursive;
+}
+code {
+  border-radius: 10px;
+}
+.code {
+  background-color: black;
+  border-radius: 10px;
+}
+.blog-title {
+  color: yellow;
+  font-size: 2rem;
+  font-family: "Playfair Display";
+}
+/* .author-name {
+  color: rgb(4, 245, 16);
+}
+.author-post {
+  color: rgb(139, 4, 139);
+} */
+.subtitle {
+  color: rgb(211, 208, 208);
+}
+/* p {
+  font-size: 1.2rem;
+} */
+/* pre {
+  font-size: 1.2rem;
+} */
+.image {
+  background-image: url("https://preview.redd.it/qpoytkb0a91a1.jpg?width=640&crop=smart&auto=webp&v=enabled&s=4c1f1112e140defdaad15102026c0bab532728c6");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 70vh;
+  background-color: black;
+  border-radius: 10px;
+}
+
+/* .image img {
+  border-radius: 10px;
+  width: 100%;
+  height: 70vh;
+} */

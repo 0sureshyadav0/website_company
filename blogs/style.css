@@ -1,0 +1,111 @@
+:root {
+  color: red;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+#blog_grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 30px;
+  width: 100%;
+  /* background-color: blue; */
+}
+#blog_grid .col {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 250px;
+  width: 300px;
+  border: 2px solid purple;
+  border-radius: 10px;
+  overflow: hidden;
+}
+#blog_grid .col:hover {
+  cursor: pointer;
+}
+.bottom_col {
+  opacity: 0;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bottom_col:hover {
+  opacity: 0.4;
+  background-size: 1000px;
+  color: red;
+  font-size: 1.3rem;
+  transition: 0.5s ease-in-out;
+}
+.bottom_col::before {
+  content: "";
+  transform: translateY(65px);
+}
+
+.blog-description {
+  display: none;
+  position: absolute;
+  z-index: 100;
+  height: 92vh;
+  border: 2px solid purple;
+  border-radius: 0px;
+  width: 100%;
+  /* margin: auto; */
+  background-color: white;
+  top: 6rem;
+  left: auto;
+  right: auto;
+  position: fixed;
+  overflow: hidden;
+}
+.blog-description .exit {
+  position: absolute;
+  right: 0;
+  background-color: white;
+  border-radius: 0.3rem;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blog-description .exit:hover {
+  cursor: pointer;
+  background-color: red;
+  transition: 0.5s ease-in-out;
+}
+.blogImg {
+  height: 60%;
+}
+.blogTitle {
+  font-size: 3rem;
+  padding: 1rem 3rem;
+  height: 10%;
+  color: black;
+  z-index: 111;
+}
+.blogSubtitle {
+  z-index: 111;
+  font-size: 1.7rem;
+  padding-left: 3rem;
+  height: 23%;
+  color: black;
+}
+.blogButton {
+  font-size: 1.7rem;
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+  height: 7%;
+  color: white;
+  background-color: blue;
+}
+.blogButton:hover {
+  cursor: pointer;
+}
