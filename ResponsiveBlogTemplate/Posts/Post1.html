@@ -43,39 +43,108 @@
       referrerpolicy="no-referrer"
     />
     <style>
-      .container {
-        width: 80%;
-        color: rgb(226, 223, 223);
-        margin: 3rem auto;
-        background-color: #196fc2;
-        padding: 1rem;
-        border-radius: 10px;
+      p {
+        /* width: 100%; */
+        margin: auto;
+        padding: 0em 5em;
+        text-align: justify;
+        font-size: 1.2em;
       }
+      .site-logo {
+        color: white;
+      }
+      #nav-container {
+        display: flex;
+        flex-direction: row;
+        background-color: blue;
+        /* width: 100%; */
+        height: 4rem;
+      }
+      #site-logo {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        text-transform: uppercase;
+        color: white;
+        font-family: "Playfair Display";
+        font-size: 2em;
+        height: 2em;
+        background-color: #004b91;
+        width: 10em;
+        padding-right: 0.5em;
+      }
+
+      /* .logo-text {
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+          } */
+      #right-nav {
+        background-color: #196fc2;
+        width: 100em;
+      }
+     
     </style>
-    <link rel="stylesheet" href="css/responsive.css" />
   </head>
   <body>
     <div id="nav-container">
-      <div class="site-logo">Suresh</div>
-      <div class="right-nav"></div>
+      <div id="site-logo"><span class="logo-text">Appazon</span></div>
+      <div id="right-nav"></div>
     </div>
-    <center><h2>MongoDB</h2></center>
-    <center><h4>Will be published soon</h4></center>
-    <!-- <div id="body-section">
-      <div id="left-container">Hello</div>
-      <div id="right-container"><div id="content"></div></div>
-    </div> -->
+   <div id="content">
+     <center><h1>MongoDB</h1></center>
+    <p>
+      MongoDB is a popular open-source document-oriented NoSQL database system
+      that was first introduced in 2009 by the company MongoDB Inc. Unlike
+      traditional relational databases that store data in tables with fixed
+      schemas, MongoDB stores data in flexible, semi-structured JSON-like
+      documents with dynamic schemas, known as BSON.
+    </p>
 
-    <script src="/blogs/script.js"></script>
-    <script src="/blogs/data.js"></script>
-    <script>
-      buildList(blogData);
-      buildBlogDescription(blogData);
-    </script>
-    <script src="/blogs/script.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
-    <script>
-      hljs.highlightAll();
-    </script>
+    <p>
+      MongoDB is designed to handle large volumes of unstructured or
+      semi-structured data, making it ideal for use in applications that require
+      high scalability, performance, and availability. It uses a distributed
+      architecture, where data is stored across multiple servers, making it
+      highly scalable and fault-tolerant. It also supports replication and
+      sharding, allowing data to be spread across multiple nodes in a cluster to
+      improve performance and reliability.
+    </p>
+
+    <p>
+      One of the key benefits of MongoDB is its ability to handle complex
+      queries and joins efficiently. MongoDB supports a powerful query language
+      that allows developers to perform advanced queries on data. It also
+      supports aggregation and map-reduce, making it possible to process large
+      volumes of data in real-time.
+    </p>
+
+    <p>
+      MongoDB is widely used in web development, mobile app development, and big
+      data analytics. It has a large and active community of developers and
+      users, who contribute to its development and maintenance. MongoDB offers a
+      range of tools and drivers for popular programming languages, making it
+      easy to integrate with existing applications.
+    </p>
+
+    <p>
+      In conclusion, MongoDB is a highly scalable and flexible NoSQL database
+      system that is ideal for handling large volumes of unstructured data. Its
+      document-oriented approach and powerful query language make it a popular
+      choice for web developers, mobile app developers, and data analysts.
+
+   </div>
+      <script src="/blogs/script.js"></script>
+      <script src="/blogs/data.js"></script>
+      <script>
+        buildList(blogData);
+        buildBlogDescription(blogData);
+      </script>
+      <script src="/blogs/script.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+      <script>
+        hljs.highlightAll();
+      </script>
+    </p>
   </body>
 </html>
