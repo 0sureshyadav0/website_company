@@ -120,7 +120,7 @@ const buildWorks = (worksData) => {
   let element = document.querySelector("#blog_grid");
   let html = "<div id='col'>";
   for (let i = 0; i < worksData.length; i++) {
-    let { img, title, subtitle, href } = worksData[i];
+    let { img, title, subtitle, href, category } = worksData[i];
     html +=
       `
       <a href="` +
@@ -134,6 +134,7 @@ const buildWorks = (worksData) => {
       `</div>
   <div id='subtitle'>` +
       subtitle +
+      category +
       `</div></div>
   </div>
   `;

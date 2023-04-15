@@ -129,6 +129,7 @@ $(
       ],
     });
 
+    // filter
     //shuffle.js
     var shuffleme = (function ($) {
       "use strict";
