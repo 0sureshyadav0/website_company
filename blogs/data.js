@@ -454,4 +454,32 @@ const worksData = [
     category: ["All", "Mobile Apps"],
     href: "https://instagram.com",
   },
+  {
+    img: "https://images.unsplash.com/photo-1661956602139-ec64991b8b16?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1930&q=80",
+    title: "Hello",
+    subtitle: "Bro",
+    category: ["All", "Mobile Apps"],
+    href: "https://instagram.com",
+  },
+  {
+    img: "https://images.unsplash.com/photo-1661956602139-ec64991b8b16?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1930&q=80",
+    title: "Hello",
+    subtitle: "Bro",
+    category: ["All", "Mobile Apps"],
+    href: "https://instagram.com",
+  },
+  {
+    img: "https://images.unsplash.com/photo-1661956602139-ec64991b8b16?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1930&q=80",
+    title: "Hello",
+    subtitle: "Bro",
+    category: ["All", "Mobile Apps"],
+    href: "https://instagram.com",
+  },
+  {
+    img: "https://images.unsplash.com/photo-1661956602139-ec64991b8b16?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1930&q=80",
+    title: "Hello",
+    subtitle: "Bro",
+    category: ["All", "Mobile Apps"],
+    href: "https://instagram.com",
+  },
 ];
