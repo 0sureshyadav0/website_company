@@ -256,7 +256,7 @@ const personalProjects = [
     name: "Agricultural Organization ",
     description:
       "This product belongs to private agriculture organization which manages records of its members including their income.",
-    duration: "Apr 2022",
+    duration: "2022",
     tech: ["Flutter", "Dart"],
     refs: [
       {
@@ -269,7 +269,7 @@ const personalProjects = [
   {
     name: "Bazaar",
     description: "Upcoming project",
-    duration: "Aug 2021",
+    duration: "2023",
     tech: ["Flutter", "Dart"],
     refs: [
       {
@@ -286,7 +286,7 @@ const companyProjects = [
     name: "Appazon",
     description:
       "A privately held startup software company headquarted in Nepal that develops and markets website building toos, mobile applications and web applications.",
-    duration: "May 2022",
+    duration: "2022",
     tech: ["Flutter", "Dart"],
     refs: [
       {
@@ -299,8 +299,14 @@ const companyProjects = [
   {
     name: "Sangeet",
     description: "A music app",
-    duration: "Sep 2018 - Dec 2018",
+    duration: "2021",
     tech: ["Flutter", "Dart"],
-    refs: [],
+    refs: [
+      {
+        icon: "fa fa-link",
+        tooltip: "Check it out",
+        url: "#",
+      },
+    ],
   },
 ];
