@@ -2630,7 +2630,9 @@ div.container-fluid.isDark,
   background-color: black;
   color: white;
 }
-
+div.rectangle {
+  color: var(--nav-bg);
+}
 div.big-rectangle {
   border: 2px solid white;
 }

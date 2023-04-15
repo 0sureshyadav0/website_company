@@ -242,6 +242,7 @@ let socialMedia = document.querySelector("section.section-networks");
 let navbar = document.querySelector(".navbar-collapse");
 let hero = document.querySelector(".hero");
 let primayNav = document.querySelector("nav#primary-navigation");
+
 // let timeline = document.querySelectorAll("div.timeline-body");
 // console.log(timeline);
 darkElement.addEventListener("click", enableDarkMode);
@@ -305,6 +306,7 @@ function enableDarkMode() {
     navbar.classList.remove("isDark");
     hero.classList.remove("isDark");
     primayNav.classList.remove("isDark");
+
     // timeline.classList.remove("isDark");
     isDark = false;
   }
