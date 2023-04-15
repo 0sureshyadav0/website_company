@@ -3,23 +3,23 @@
 //   menu.classList.toggle("is-active");
 // });
 
-let isVisible = false;
-function showMenu() {
-  if (!isVisible) {
-    document.querySelector(".nav").style =
-      "z-index:100;display:flex;flex-direction:column;position:absolute;top:1.9rem;right:0;justify-content:flex-start;animation-name:start-slide;";
-    isVisible = true;
-  } else {
-    document.querySelector(".nav").style =
-      "z-index:100;display:flex;flex-direction:column;position:absolute;top:1.9rem;right:0;justify-content:flex-start;animation-name:end-slide;";
+// let isVisible = false;
+// function showMenu() {
+//   if (!isVisible) {
+//     document.querySelector(".nav").style =
+//       "z-index:100;display:flex;flex-direction:column;position:absolute;top:1.9rem;right:0;justify-content:flex-start;animation-name:start-slide;";
+//     isVisible = true;
+//   } else {
+//     document.querySelector(".nav").style =
+//       "z-index:100;display:flex;flex-direction:column;position:absolute;top:1.9rem;right:0;justify-content:flex-start;animation-name:end-slide;";
 
-    setTimeout(removeDisplay, 800);
-    function removeDisplay() {
-      document.querySelector(".nav").style.display = "none";
-    }
-    isVisible = false;
-  }
-}
+//     setTimeout(removeDisplay, 800);
+//     function removeDisplay() {
+//       document.querySelector(".nav").style.display = "none";
+//     }
+//     isVisible = false;
+//   }
+// }
 
 // const buildBlog = (blogData) => {
 //   let element = document.querySelector("#blog_grid");
@@ -46,10 +46,10 @@ function showMenu() {
 //   console.log(element);
 // };
 
-const buildBlog = (blogData) => {
-  let html = "<span style='color:red;'>hello</span>";
-  document.querySelector("#blog_grid").innerHTML = html;
-};
+// const buildBlog = (blogData) => {
+//   let html = "<span style='color:red;'>hello</span>";
+//   document.querySelector("#col").innerHTML = html;
+// };
 
 const buildList = (blogData) => {
   let element = document.querySelector("#left-container");
@@ -115,7 +115,32 @@ const buildBlogDescription = (blogData) => {
 
   element.innerHTML = html;
 };
-// `<i class='fa fa-play' style='margin-left:1rem;cursor:pointer;color:yellow;' onclick='speak("Hi, Welcome to Appazon's world. Before you start listening the blog post, it's important to be in a good position to ensure your comfort and focus. This blog belongs to "` +
+
+const buildWorks = (worksData) => {
+  let element = document.querySelector("#blog_grid");
+  let html = "<div id='col'>";
+  for (let i = 0; i < worksData.length; i++) {
+    let { img, title, subtitle, href } = worksData[i];
+    html +=
+      `
+      <a href="` +
+      href +
+      `">+
+  <div id="inside-col" style="background-image:url('` +
+      img +
+      `');">
+ <div id="onHover"> <div id='title'>` +
+      title +
+      `</div>
+  <div id='subtitle'>` +
+      subtitle +
+      `</div></div>
+  </div>
+  `;
+  }
+  element.innerHTML = html + "</div>";
+};
+
 var firstPlay = false;
 function speak(message) {
   var msg = new SpeechSynthesisUtterance(message);

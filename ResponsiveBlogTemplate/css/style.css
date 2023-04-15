@@ -114,6 +114,7 @@
   background-color: rgb(248, 239, 239, 0.5);
   width: 95%;
   height: 15rem;
+  cursor: pointer;
 }
 .home-article-img {
   background-repeat: no-repeat;

@@ -438,3 +438,20 @@ WHERE condition;
     category: " ",
   },
 ];
+
+const worksData = [
+  {
+    img: "https://plus.unsplash.com/premium_photo-1669638781649-5802d884acd5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+    title: "Web Development",
+    subtitle: "Ios",
+    category: ["All", "Web Design"],
+    href: "https://google.com",
+  },
+  {
+    img: "https://images.unsplash.com/photo-1661956602139-ec64991b8b16?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1930&q=80",
+    title: "Hello",
+    subtitle: "Bro",
+    category: ["All", "Mobile Apps"],
+    href: "https://instagram.com",
+  },
+];
