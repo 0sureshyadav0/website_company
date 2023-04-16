@@ -2685,7 +2685,7 @@ nav#primary-navigation.isDark {
   visibility: hidden;
 }
 
-/* @media only screen and (max-width: 470px) {
+@media only screen and (max-width: 470px) {
   #theme {
     position: fixed;
     right: 1em;
@@ -2696,7 +2696,7 @@ nav#primary-navigation.isDark {
   #theme:checked {
     color: var(--nav-bg);
   }
-} */
+}
 #video {
   position: absolute;
   top: 5em;
