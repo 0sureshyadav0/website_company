@@ -18,8 +18,8 @@
   --nav-bg: rgb(4, 83, 4);
 }
 :root.yellow {
-  --logo-bg: rgb(63, 63, 1);
-  --nav-bg: rgb(121, 121, 4);
+  --logo-bg: rgb(109, 109, 3);
+  --nav-bg: rgb(238, 238, 8);
 }
 :root.lightgreen {
   --logo-bg: rgb(12, 116, 3);
@@ -2685,7 +2685,7 @@ nav#primary-navigation.isDark {
   visibility: hidden;
 }
 
-@media only screen and (max-width: 470px) {
+/* @media only screen and (max-width: 470px) {
   #theme {
     position: fixed;
     right: 1em;
@@ -2696,7 +2696,7 @@ nav#primary-navigation.isDark {
   #theme:checked {
     color: var(--nav-bg);
   }
-}
+} */
 #video {
   position: absolute;
   top: 5em;
