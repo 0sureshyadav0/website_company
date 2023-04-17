@@ -75,8 +75,14 @@
     }
 
     pre {
-      width: 80%;
+      width: 100%;
       margin: auto;
+    }
+
+    @media only screen and (min-width:770px) {
+      pre {
+        width: 85%;
+      }
     }
 
     @media only screen and (max-width:770px) {
@@ -148,6 +154,10 @@
       system that is ideal for handling large volumes of unstructured data. Its
       document-oriented approach and powerful query language make it a popular
       choice for web developers, mobile app developers, and data analysts.</p>
+    <br>
+    <hr>
+    <br>
+    <h2>MongoDB along with code</h2>
     <p>
       MongoDB is a NoSQL document-oriented database that stores data in flexible, JSON-like documents, which allows for
       faster and more scalable data storage and retrieval. MongoDB is an open-source database that is commonly used in
@@ -224,8 +234,8 @@ client.connect(err => {
       for flexible data schemas and ease of use make it a popular choice for developers around the world.
     </p>
     <h1>
-    Create</h1>
-   <p>To create a new document in MongoDB, we can use the insertOne() method, as shown in the following example:</p>
+      Create</h1>
+    <p>To create a new document in MongoDB, we can use the insertOne() method, as shown in the following example:</p>
     <pre>
       <code class="mongodb">
 // Insert a new document into the "users" collection
@@ -239,7 +249,9 @@ db.collection('users').insertOne(newUser, (err, result) => {
 });
       </code>
     </pre>
-    <p>In this code, we first define a new user object and then use the insertOne() method to insert it into the "users" collection. The method takes a callback function that is called with an error or a result object containing information about the inserted document.</p>
+    <p>In this code, we first define a new user object and then use the insertOne() method to insert it into the "users"
+      collection. The method takes a callback function that is called with an error or a result object containing
+      information about the inserted document.</p>
     <h1>Read</h1>
     <p>To read data from MongoDB, we can use the find() method, as shown in the following example:</p>
     <pre>
@@ -257,7 +269,9 @@ db.collection('users').find().toArray((err, documents) => {
       </code>
     </pre>
     <p>
-      In this code, we use the find() method to retrieve all documents from the "users" collection and convert the resulting cursor to an array using the toArray() method. The method takes a callback function that is called with an error or an array of documents.
+      In this code, we use the find() method to retrieve all documents from the "users" collection and convert the
+      resulting cursor to an array using the toArray() method. The method takes a callback function that is called with
+      an error or an array of documents.
     </p>
     <h1>Update</h1>
     <p>
@@ -279,7 +293,10 @@ db.collection('users').updateOne(filter, update, (err, result) => {
       </code>
     </pre>
     <p>
-      In this code, we first define a filter object that specifies which document to update and an update object that specifies the new value of the "age" field. We then use the updateOne() method to update the matching document. The method takes a callback function that is called with an error or a result object containing information about the update operation.
+      In this code, we first define a filter object that specifies which document to update and an update object that
+      specifies the new value of the "age" field. We then use the updateOne() method to update the matching document.
+      The method takes a callback function that is called with an error or a result object containing information about
+      the update operation.
     </p>
     <h1>Delete</h1>
     <p>
@@ -300,10 +317,14 @@ db.collection('users').deleteOne(filter, (err, result) => {
       </code>
     </pre>
     <p>
-      In this code, we first define a filter object that specifies which document to delete. We then use the deleteOne() method to delete the matching document. The method takes a callback function that is called with an error or a result object containing information about the delete operation.
+      In this code, we first define a filter object that specifies which document to delete. We then use the deleteOne()
+      method to delete the matching document. The method takes a callback function that is called with an error or a
+      result object containing information about the delete operation.
     </p>
     <p>
-      Overall, these are the basic CRUD operations that you can perform on a MongoDB database. With these operations, you can create, read, update, and delete documents in your database, giving you a powerful toolset for managing data in your web applications.
+      Overall, these are the basic CRUD operations that you can perform on a MongoDB database. With these operations,
+      you can create, read, update, and delete documents in your database, giving you a powerful toolset for managing
+      data in your web applications.
     </p>
   </div>
   <script src="/blogs/script.js"></script>
