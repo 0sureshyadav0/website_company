@@ -216,7 +216,7 @@ WHERE condition;
     link: " index.html",
     list: [" Install VS code", " Open folder", " Run code"],
     code: [],
-    category: " ",
+    category: "Database",
   },
   {
     id: 1,
@@ -435,8 +435,36 @@ WHERE condition;
     link: " index.html",
     list: [" Install VS code", " Open folder", " Run code"],
     code: [],
-    category: " ",
+    category: " Database",
   },
+  {
+     id: 2,
+    imgLink:
+      "https://f4n3x6c5.stackpathcdn.com/article/data-structure-and-algorithm-common-types/Images/Data%20Structure%20And%20Algorithm1.jpg",
+    title: " Data Structures and Algorithms ",
+    subtitle: " DSA",
+    date: " 20 April 2023",
+    authorName: " Suresh Yadav",
+    author_post: " Full Stack Software Engineer",
+    authorLink: "https:sureshyadav.info.np",
+    // author_organization:" "
+    readTime: " 6 min read ",
+    category: " DSA"
+  },
+   {
+     id: 3,
+    imgLink:
+      "https://www.devopsschool.com/blog/wp-content/uploads/2022/03/jquery.png",
+    title: " jQuery",
+    subtitle: " jQuery",
+    date: " 20 April 2023",
+    authorName: " Suresh Yadav",
+    author_post: " Full Stack Software Engineer",
+    authorLink: "https:sureshyadav.info.np",
+    // author_organization:" "
+     readTime: " 6 min read ",
+    category:"JavaScript"
+  }
 ];
 
 const worksData = [

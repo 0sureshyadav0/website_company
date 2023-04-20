@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suresh Yadav -> Blogs</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/blogs/blogDesc.css" />
+    <link rel="stylesheet" href="/blogs/responsive.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Playfair+Display&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/base16/windows-high-contrast-light.min.css"
+      integrity="sha512-RIdAP3pmTreNrljC6TbCIiZOOneyS9kgcjKIWHggive7iTbzgPdLQSd6jenVnKmEbRCe3iqDCkrR3oqinOGIGw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    /> -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/base16/windows-high-contrast.min.css"
+        integrity="sha512-SE4GvXE6j696nfjO1PEfQ1+3bfOya4A5bFXnUx8xYsFYRVBhY5RYGsp8lBZBIXD+Q+knAuhlMDh98rrXiuVMiQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+            background-color: rgb(230, 228, 228);
+        }
+        p {
+            /* width: 100%; */
+            margin: auto;
+            padding: 0em 5em;
+            text-align: justify;
+            font-size: 1.2em;
+        }
+        ul {
+            margin: auto;
+            padding: 0em 8em;
+            font-size: 1.2em;
+            font-style: italic;
+        }
+
+        .site-logo {
+            color: white;
+        }
+
+        #nav-container {
+            /* position:fixed; */
+            display: flex;
+            flex-direction: row;
+            background-color: #004b91;
+            /* width: 100%; */
+            height: 4rem;
+        }
+
+        #site-logo {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            text-transform: uppercase;
+            color: white;
+            font-family: "Playfair Display";
+            font-size: 2em;
+            height: 2em;
+            background-color: #004b91;
+            width: 10em;
+            padding-right: 0.5em;
+        }
+
+        /* .logo-text {
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+          } */
+        #right-nav {
+            background-color: #196fc2;
+            width: 100em;
+        }
+
+        pre {
+            width: 100%;
+            margin: auto;
+        }
+
+        @media only screen and (min-width:770px) {
+            pre {
+                width: 85%;
+            }
+        }
+
+        @media only screen and (max-width:770px) {
+            p {
+                margin: .5em;
+                padding: 0;
+            }
+
+            #site-logo {
+                width: 30em;
+            }
+            ul{
+                padding:0;
+            }
+        }
+
+        @media only screen and (max-width:400px) {
+            #site-logo {
+                padding-top: .4em;
+                font-size: 1.5em;
+                width: 40em;
+            }
+            ul{
+                padding:0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav-container">
+        <div id="site-logo"><span class="logo-text">Appazon</span></div>
+        <div id="right-nav"></div>
+    </div>
+    <div id="content">
+        <center>
+            <h1>jQuery</h1>
+        </center>
+        <p>
+            jQuery is a popular open-source JavaScript library that simplifies and streamlines the process of developing
+            dynamic and interactive web pages. It was first released in 2006 by John Resig and has since become one of
+            the most widely used JavaScript libraries, with a large and active community of developers and contributors.
+        </p>
+        <p>
+            jQuery provides a powerful and easy-to-use API that allows developers to manipulate HTML documents, handle
+            events, create animations, and interact with server-side data using AJAX. Its syntax is designed to be
+            concise and intuitive, making it easier to write complex JavaScript code with less effort.
+
+          <p><br>
+              Some of the key features of jQuery include:
+          </p>
+        </p>
+        <br>
+        <p>
+        <ul>
+            <li>DOM manipulation: jQuery provides a simple and powerful way to manipulate the Document Object Model
+                (DOM) of an HTML document. This includes selecting, adding, removing, and modifying HTML elements, as
+                well as changing their attributes and properties.</li>
+                To select an HTML element and change its text, you can use the following code:
+<pre>
+<code class="jquery">
+// Select the element with ID "myElement" and change its text
+$("#myElement").text("New text");
+
+</code>
+</pre>
+To add a new element to the page, you can use the following code:
+<pre>
+<code class="jquery">
+// Create a new &lt;p&gt; element and append it to the &lt;body&gt; element
+var newElement = $("&lt;p&gt;").text("This is a new paragraph.");
+$("body").append(newElement);
+
+</code>
+</pre>
+            <li>Event handling: jQuery simplifies the process of handling user events, such as mouse clicks and keyboard
+                inputs. It provides a consistent and cross-browser-compatible way to attach event handlers to HTML
+                elements and handle events in a consistent manner.</li>
+                To handle a click event on a button, you can use the following code:
+<pre>
+<code class="jquery">
+// Attach a click event handler to the button with ID "myButton"
+$("#myButton").click(function() {
+  alert("Button clicked!");
+});
+
+</code>
+</pre>
+To handle a key press event on a text input, you can use the following code:
+<pre>
+<code class="jquery">
+// Attach a key press event handler to the text input with ID "myInput"
+$("#myInput").keypress(function(event) {
+  console.log("Key pressed: " + event.which);
+});
+
+</code>
+</pre>
+            <li>AJAX: jQuery provides a simple and powerful API for making asynchronous HTTP requests to a server and
+                handling the response. This allows developers to build dynamic and interactive web pages that can update
+                their content without requiring a full page reload.</li>
+                To make an AJAX request to a server and update the page with the response, you can use the following code:
+<pre>
+<code class="jquery">
+// Make an AJAX request to the server and update the &lt;div&gt; element with ID "myDiv" with the response
+$.ajax({
+  url: "/api/data",
+  type: "GET",
+  success: function(data) {
+    $("#myDiv").text(data);
+  }
+});
+
+</code>
+</pre>
+            <li>Animations: jQuery provides a powerful and easy-to-use animation API that allows developers to create
+                complex and visually appealing animations with minimal effort. This includes animating HTML elements,
+                CSS properties, and even entire HTML documents.</li>
+                To animate an HTML element, you can use the following code:
+<pre>
+<code class="jquery">
+// Animate the element with ID "myElement" to fade out over 1 second
+$("#myElement").fadeOut(1000);
+
+</code>
+</pre>
+            <li>Plugins: jQuery has a large and active community of developers who have created a wide range of plugins
+                and extensions that extend the functionality of the library. These plugins can be easily integrated into
+                any jQuery project, allowing developers to add new features and functionality with minimal effort.</li>
+                To use a jQuery plugin, you can simply include its script file and use its API. For example, to use the jQuery UI library to create a draggable element, you can use the following code:
+<pre>
+<code class="jquery">
+// Include the jQuery UI script file
+&lt;script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"&gt;&lt;/script&gt;
+
+// Make the element with ID "myElement" draggable using the jQuery UI library
+$("#myElement").draggable();
+
+</code>
+</pre>
+These are just a few examples of the many things you can do with jQuery. With its simple and intuitive API, you can easily manipulate the DOM, handle events, make AJAX requests, create animations, and use plugins to extend its functionality.
+</ul>
+            <p>
+                Overall, jQuery is a powerful and versatile library that has revolutionized the way web developers
+                create dynamic and interactive web pages. Its simplicity and ease of use have made it a favorite among
+                developers of all skill levels, and its active community ensures that it will continue to evolve and
+                improve for years to come.
+            </p>
+        </ul>
+        </p>
+
+        <p>
+            
+        </p>
+        <script src="/blogs/script.js"></script>
+        <script src="/blogs/data.js"></script>
+        <script>
+            buildList(blogData);
+            buildBlogDescription(blogData);
+        </script>
+        <script src="/blogs/script.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+        <script>
+            hljs.highlightAll();
+        </script>
+        </p>
+</body>
+
+</html>
