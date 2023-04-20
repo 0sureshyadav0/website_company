@@ -30,7 +30,8 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        p {
+        p,
+        ul,h1,h2,h3 {
             /* width: 100%; */
             margin: auto;
             padding: 0em 5em;
@@ -42,7 +43,11 @@
             margin: auto;
             padding: 0em 8em;
             font-size: 1.2em;
-            font-style: italic;
+            /* font-style: italic; */
+        }
+
+        li {
+            list-style: none;
         }
 
         .site-logo {
@@ -94,7 +99,9 @@
         }
 
         @media only screen and (max-width:770px) {
-            p {
+
+            p,
+            ul {
                 margin: .5em;
                 padding: 0;
             }
@@ -102,8 +109,9 @@
             #site-logo {
                 width: 30em;
             }
-            ul{
-                padding:0;
+
+            ul {
+                padding: 0;
             }
         }
 
@@ -113,8 +121,9 @@
                 font-size: 1.5em;
                 width: 40em;
             }
-            ul{
-                padding:0;
+
+            ul {
+                padding: 0;
             }
         }
     </style>
@@ -157,41 +166,57 @@
 
         <ul><br>
             <li>
-                Arrays: A collection of elements of the same data type, arranged in a contiguous block of memory.
+                <b>Arrays</b>: A collection of elements of the same data type, arranged in a contiguous block of memory.
             </li>
+            <br>
             <li>
-                Linked Lists: A data structure in which each element (node) contains a reference to the next node,
+                <b>Linked Lists</b>: A data structure in which each element (node) contains a reference to the next
+                node,
                 forming a chain.
             </li>
+            <br>
             <li>
-                Stacks: A data structure in which elements are added and removed from one end only (the top).
+                <b>Stacks</b>: A data structure in which elements are added and removed from one end only (the top).
             </li>
+            <br>
             <li>
-                Queues: A data structure in which elements are added at one end (the rear) and removed from the other
+                <b>Queues</b>: A data structure in which elements are added at one end (the rear) and removed from the
+                other
                 end (the front).
             </li>
+            <br>
             <li>
-                Trees: A data structure that consists of nodes connected by edges, with each node having zero or more
+                <b>Trees</b>: A data structure that consists of nodes connected by edges, with each node having zero or
+                more
                 children.
             </li>
+            <br>
             <li>
-                Graphs: A data structure consisting of a set of nodes (vertices) and a set of edges connecting them.
+                <b>Graphs</b>: A data structure consisting of a set of nodes (vertices) and a set of edges connecting
+                them.
             </li>
+            <br>
             <li>
-                Hash Tables: A data structure that maps keys to values, allowing for fast retrieval of values based on
+                <b>Hash Tables</b>: A data structure that maps keys to values, allowing for fast retrieval of values
+                based on
                 their keys.
             </li>
+            <br>
             <li>
-                Heaps: A specialized tree-based data structure that maintains a partial ordering of its elements.
+                <b>Heaps</b>: A specialized tree-based data structure that maintains a partial ordering of its elements.
             </li>
+            <br>
             <li>
-                Tries: A tree-like data structure used to store and retrieve associative data.
+                <b>Tries</b>: A tree-like data structure used to store and retrieve associative data.
             </li>
+            <br>
             <li>
-                Sets: A collection of unique elements, typically implemented using a hash table or a tree.
+                <b>Sets</b>: A collection of unique elements, typically implemented using a hash table or a tree.
             </li>
+            <br>
             <li>
-                Queues with Priority: A data structure similar to a queue, but with each element assigned a priority,
+                <b>Queues with Priority</b>: A data structure similar to a queue, but with each element assigned a
+                priority,
                 allowing for elements to be removed in order of priority.
             </li>
         </ul>
@@ -201,33 +226,40 @@
             weaknesses in terms of storage efficiency, retrieval speed, and other factors. Choosing the right data
             structure for a particular task is an important part of efficient programming.
         </p>
-<br><br>
-<h1>Algorithms</h1>
+        <br><br>
+        <h1>Algorithms</h1>
         <p>
             There are many different algorithms that are commonly used in computer programming. Here are some of the
             most common ones:
         <ul>
-            <li>Sorting Algorithms: Sorting algorithms are used to arrange elements in a particular order, such as
+            <li><b>Sorting Algorithms</b>: Sorting algorithms are used to arrange elements in a particular order, such
+                as
                 ascending or descending. Some popular sorting algorithms include bubble sort, insertion sort, selection
-                sort, merge sort, quicksort, and heapsort.</li>
-            <li>Searching Algorithms: Searching algorithms are used to find a particular value within a data structure.
+                sort, merge sort, quicksort, and heapsort.</li><br>
+            <li><b>Searching Algorithms</b>: Searching algorithms are used to find a particular value within a data
+                structure.
                 Some popular searching algorithms include linear search, binary search, and interpolation search.</li>
-            <li>Graph Algorithms: Graph algorithms are used to traverse and analyze graphs, which are structures
+            <br>
+            <li><b>Graph Algorithms</b>: Graph algorithms are used to traverse and analyze graphs, which are structures
                 consisting of vertices (nodes) and edges connecting them. Some popular graph algorithms include
-                Dijkstra's algorithm, Bellman-Ford algorithm, Kruskal's algorithm, and Prim's algorithm.</li>
-            <li>Dynamic Programming Algorithms: Dynamic programming algorithms are used to solve optimization problems
+                Dijkstra's algorithm, Bellman-Ford algorithm, Kruskal's algorithm, and Prim's algorithm.</li><br>
+            <li><b>Dynamic Programming Algorithms</b>: Dynamic programming algorithms are used to solve optimization
+                problems
                 by breaking them down into smaller subproblems and solving them recursively. Some popular dynamic
                 programming algorithms include the Knapsack problem, Longest Common Subsequence, and Floyd-Warshall
-                algorithm.</li>
-            <li>Divide and Conquer Algorithms: Divide and conquer algorithms are used to solve problems by breaking them
+                algorithm.</li><br>
+            <li><b>Divide and Conquer Algorithms</b>: Divide and conquer algorithms are used to solve problems by
+                breaking them
                 down into smaller subproblems and solving them recursively. Some popular divide and conquer algorithms
-                include binary search, quicksort, and merge sort.</li>
-            <li>Greedy Algorithms: Greedy algorithms are used to solve optimization problems by making locally optimal
+                include binary search, quicksort, and merge sort.</li><br>
+            <li><b>Greedy Algorithms</b>: Greedy algorithms are used to solve optimization problems by making locally
+                optimal
                 choices at each step in the hope of finding a global optimum. Some popular greedy algorithms include the
-                Huffman coding algorithm and the Kruskal's algorithm.</li>
-            <li>Backtracking Algorithms: Backtracking algorithms are used to solve problems by trying out different
+                Huffman coding algorithm and the Kruskal's algorithm.</li><br>
+            <li><b>Backtracking Algorithms</b>: Backtracking algorithms are used to solve problems by trying out
+                different
                 solutions and undoing them if they don't work, until a solution is found. Some popular backtracking
-                algorithms include the N-Queens problem and the Sudoku solver.</li>
+                algorithms include the N-Queens problem and the Sudoku solver.</li><br>
 
         </ul>
         <p>
