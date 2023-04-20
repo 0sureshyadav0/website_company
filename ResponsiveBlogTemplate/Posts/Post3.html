@@ -30,16 +30,22 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        body{
+        body {
             background-color: rgb(230, 228, 228);
         }
-        p {
+
+        p,
+        h1,
+        h2,
+        h3,
+        table {
             /* width: 100%; */
             margin: auto;
             padding: 0em 5em;
             text-align: justify;
             font-size: 1.2em;
         }
+
         ul {
             margin: auto;
             padding: 0em 8em;
@@ -104,8 +110,9 @@
             #site-logo {
                 width: 30em;
             }
-            ul{
-                padding:0;
+
+            ul {
+                padding: 0;
             }
         }
 
@@ -115,8 +122,9 @@
                 font-size: 1.5em;
                 width: 40em;
             }
-            ul{
-                padding:0;
+
+            ul {
+                padding: 0;
             }
         }
     </style>
@@ -141,9 +149,9 @@
             events, create animations, and interact with server-side data using AJAX. Its syntax is designed to be
             concise and intuitive, making it easier to write complex JavaScript code with less effort.
 
-          <p><br>
-              Some of the key features of jQuery include:
-          </p>
+        <p><br>
+            Some of the key features of jQuery include:
+        </p>
         </p>
         <br>
         <p>
@@ -151,16 +159,16 @@
             <li>DOM manipulation: jQuery provides a simple and powerful way to manipulate the Document Object Model
                 (DOM) of an HTML document. This includes selecting, adding, removing, and modifying HTML elements, as
                 well as changing their attributes and properties.</li>
-                To select an HTML element and change its text, you can use the following code:
-<pre>
+            To select an HTML element and change its text, you can use the following code:
+            <pre>
 <code class="jquery">
 // Select the element with ID "myElement" and change its text
 $("#myElement").text("New text");
 
 </code>
 </pre>
-To add a new element to the page, you can use the following code:
-<pre>
+            To add a new element to the page, you can use the following code:
+            <pre>
 <code class="jquery">
 // Create a new &lt;p&gt; element and append it to the &lt;body&gt; element
 var newElement = $("&lt;p&gt;").text("This is a new paragraph.");
@@ -171,8 +179,8 @@ $("body").append(newElement);
             <li>Event handling: jQuery simplifies the process of handling user events, such as mouse clicks and keyboard
                 inputs. It provides a consistent and cross-browser-compatible way to attach event handlers to HTML
                 elements and handle events in a consistent manner.</li>
-                To handle a click event on a button, you can use the following code:
-<pre>
+            To handle a click event on a button, you can use the following code:
+            <pre>
 <code class="jquery">
 // Attach a click event handler to the button with ID "myButton"
 $("#myButton").click(function() {
@@ -181,8 +189,8 @@ $("#myButton").click(function() {
 
 </code>
 </pre>
-To handle a key press event on a text input, you can use the following code:
-<pre>
+            To handle a key press event on a text input, you can use the following code:
+            <pre>
 <code class="jquery">
 // Attach a key press event handler to the text input with ID "myInput"
 $("#myInput").keypress(function(event) {
@@ -194,8 +202,8 @@ $("#myInput").keypress(function(event) {
             <li>AJAX: jQuery provides a simple and powerful API for making asynchronous HTTP requests to a server and
                 handling the response. This allows developers to build dynamic and interactive web pages that can update
                 their content without requiring a full page reload.</li>
-                To make an AJAX request to a server and update the page with the response, you can use the following code:
-<pre>
+            To make an AJAX request to a server and update the page with the response, you can use the following code:
+            <pre>
 <code class="jquery">
 // Make an AJAX request to the server and update the &lt;div&gt; element with ID "myDiv" with the response
 $.ajax({
@@ -211,8 +219,8 @@ $.ajax({
             <li>Animations: jQuery provides a powerful and easy-to-use animation API that allows developers to create
                 complex and visually appealing animations with minimal effort. This includes animating HTML elements,
                 CSS properties, and even entire HTML documents.</li>
-                To animate an HTML element, you can use the following code:
-<pre>
+            To animate an HTML element, you can use the following code:
+            <pre>
 <code class="jquery">
 // Animate the element with ID "myElement" to fade out over 1 second
 $("#myElement").fadeOut(1000);
@@ -222,8 +230,9 @@ $("#myElement").fadeOut(1000);
             <li>Plugins: jQuery has a large and active community of developers who have created a wide range of plugins
                 and extensions that extend the functionality of the library. These plugins can be easily integrated into
                 any jQuery project, allowing developers to add new features and functionality with minimal effort.</li>
-                To use a jQuery plugin, you can simply include its script file and use its API. For example, to use the jQuery UI library to create a draggable element, you can use the following code:
-<pre>
+            To use a jQuery plugin, you can simply include its script file and use its API. For example, to use the
+            jQuery UI library to create a draggable element, you can use the following code:
+            <pre>
 <code class="jquery">
 // Include the jQuery UI script file
 &lt;script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"&gt;&lt;/script&gt;
@@ -233,20 +242,115 @@ $("#myElement").draggable();
 
 </code>
 </pre>
-These are just a few examples of the many things you can do with jQuery. With its simple and intuitive API, you can easily manipulate the DOM, handle events, make AJAX requests, create animations, and use plugins to extend its functionality.
-</ul>
-            <p>
-                Overall, jQuery is a powerful and versatile library that has revolutionized the way web developers
-                create dynamic and interactive web pages. Its simplicity and ease of use have made it a favorite among
-                developers of all skill levels, and its active community ensures that it will continue to evolve and
-                improve for years to come.
-            </p>
+            These are just a few examples of the many things you can do with jQuery. With its simple and intuitive API,
+            you can easily manipulate the DOM, handle events, make AJAX requests, create animations, and use plugins to
+            extend its functionality.
+        </ul>
+        <p>
+            Overall, jQuery is a powerful and versatile library that has revolutionized the way web developers
+            create dynamic and interactive web pages. Its simplicity and ease of use have made it a favorite among
+            developers of all skill levels, and its active community ensures that it will continue to evolve and
+            improve for years to come.
+        </p>
         </ul>
         </p>
-
+        <h3>From w3schools</h3>
         <p>
-            
+            Adding jQuery
+<pre>
+<code class="jquery">
+// In head section
+&lt;head&gt;
+&lt;script src="jquery-3.6.4.min.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+
+// Through CDN (Content Delivery Network)
+&lt;head&gt;
+&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+</code>
+</pre>
         </p>
+        <p>jQuery Syntax</p>
+        <pre>
+  <code class="jquery">
+$(selector).action()
+  </code>
+</pre>
+        <p>
+        <ul>
+            <li>$ sign to define jQuery</li>
+            <li>(selector) to "query (or find)" HTML elements</li>
+            <li>jQuery action() to be performed on the element(s)</li>
+        </ul>
+        </p>
+        <p>
+        <h3>Document Ready Event</h3>
+        <pre>
+        <code class="jquery">
+            $(document).ready(function(){
+                // jQuery methods go here...
+            })
+        </code>
+    </pre>
+
+        </p>
+        <p>
+            All jQuery methods are inside ready event, it's because it may be possible the image hasn't been loaded yet
+            and you are trying to get image size or trying to hide an element. Then you will get error.
+        </p>
+        <p>
+            Shorter method for document ready event:
+        </p>
+        <p>
+        <pre>
+        <code class="jquery">
+           $(function(){
+              // jQuery methods go here ....
+
+           })
+        </code>
+    </pre>
+        </p>
+        <h1>Selectors</h1>
+        <p>
+            Selectors allow you to select and manipulate HTML elements.
+        </p>
+
+<p>
+    $(*) -> Selects all elements<br>
+    $(this) -> Selects the current HTML element<br>
+    $("p:first") -> Selects the first &lt;p&gt; element<br>
+    For more visit this <a href="https://www.w3schools.com/jquery/jquery_selectors.asp">link</a>
+
+</p>
+<h1>Events</h1>
+<p>
+    <pre>
+        click
+        dblclick
+        mouseenter
+        mouseleave
+        mousedown 
+        mousup
+        keypress
+        keydown
+        keyup
+        submit
+        change
+        focus
+        blur 
+        load
+        resize 
+        scroll 
+        unload 
+        hover 
+        on
+
+    </pre>
+</p>
+
+
         <script src="/blogs/script.js"></script>
         <script src="/blogs/data.js"></script>
         <script>
