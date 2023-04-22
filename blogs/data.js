@@ -441,7 +441,7 @@ WHERE condition;
      id: 2,
     imgLink:
       "https://f4n3x6c5.stackpathcdn.com/article/data-structure-and-algorithm-common-types/Images/Data%20Structure%20And%20Algorithm1.jpg",
-    title: " Data Structures and Algorithms ",
+    title: " DSA ",
     subtitle: " DSA",
     date: " 20 April 2023",
     authorName: " Suresh Yadav",
