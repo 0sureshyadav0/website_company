@@ -2,367 +2,343 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Suresh Yadav -> Blogs</title>
-    <link rel="stylesheet" href="/assets/css/style.css" />
-    <link rel="stylesheet" href="/blogs/blogDesc.css" />
-    <link rel="stylesheet" href="/blogs/responsive.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Playfair+Display&display=swap"
-        rel="stylesheet" />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <!-- <link
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suresh Yadav -> Blogs</title>
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="stylesheet" href="/blogs/blogDesc.css" />
+  <link rel="stylesheet" href="/blogs/responsive.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Playfair+Display&display=swap" rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/base16/windows-high-contrast-light.min.css"
       integrity="sha512-RIdAP3pmTreNrljC6TbCIiZOOneyS9kgcjKIWHggive7iTbzgPdLQSd6jenVnKmEbRCe3iqDCkrR3oqinOGIGw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     /> -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/base16/windows-high-contrast.min.css"
-        integrity="sha512-SE4GvXE6j696nfjO1PEfQ1+3bfOya4A5bFXnUx8xYsFYRVBhY5RYGsp8lBZBIXD+Q+knAuhlMDh98rrXiuVMiQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-        body {
-            background-color: rgb(230, 228, 228);
-        }
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/base16/windows-high-contrast.min.css"
+    integrity="sha512-SE4GvXE6j696nfjO1PEfQ1+3bfOya4A5bFXnUx8xYsFYRVBhY5RYGsp8lBZBIXD+Q+knAuhlMDh98rrXiuVMiQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    p {
+      /* width: 100%; */
+      margin: auto;
+      padding: 0em 5em;
+      text-align: justify;
+      font-size: 1.2em;
+    }
 
-        p,
-        h1,
-        h2,
-        h3,
-        table {
-            /* width: 100%; */
-            margin: auto;
-            padding: 0em 5em;
-            text-align: justify;
-            font-size: 1.2em;
-        }
+    .site-logo {
+      color: white;
+    }
 
-        ul {
-            margin: auto;
-            padding: 0em 8em;
-            font-size: 1.2em;
-            font-style: italic;
-        }
+    #nav-container {
+      /* position:fixed; */
+      display: flex;
+      flex-direction: row;
+      background-color: #004b91;
+      /* width: 100%; */
+      height: 4rem;
+    }
 
-        .site-logo {
-            color: white;
-        }
+    #site-logo {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      text-transform: uppercase;
+      color: white;
+      font-family: "Playfair Display";
+      font-size: 2em;
+      height: 2em;
+      background-color: #004b91;
+      width: 10em;
+      padding-right: 0.5em;
+    }
 
-        #nav-container {
-            /* position:fixed; */
-            display: flex;
-            flex-direction: row;
-            background-color: #004b91;
-            /* width: 100%; */
-            height: 4rem;
-        }
-
-        #site-logo {
-            display: flex;
-            align-items: center;
-            justify-content: end;
-            text-transform: uppercase;
-            color: white;
-            font-family: "Playfair Display";
-            font-size: 2em;
-            height: 2em;
-            background-color: #004b91;
-            width: 10em;
-            padding-right: 0.5em;
-        }
-
-        /* .logo-text {
+    /* .logo-text {
             display: flex;
             flex-direction: row;
             justify-content: end;
           } */
-        #right-nav {
-            background-color: #196fc2;
-            width: 100em;
-        }
+    #right-nav {
+      background-color: #196fc2;
+      width: 100em;
+    }
 
-        pre {
-            width: 100%;
-            margin: auto;
-        }
+    pre {
+      width: 100%;
+      margin: auto;
+    }
 
-        @media only screen and (min-width:770px) {
-            pre {
-                width: 85%;
-            }
-        }
+    @media only screen and (min-width:770px) {
+      pre {
+        width: 85%;
+      }
+    }
 
-        @media only screen and (max-width:770px) {
-            p {
-                margin: .5em;
-                padding: 0;
-            }
+    @media only screen and (max-width:770px) {
+      p {
+        margin: .5em;
+        padding: 0;
+      }
 
-            #site-logo {
-                width: 30em;
-            }
+      #site-logo {
+        width: 30em;
+      }
+    }
 
-            ul {
-                padding: 0;
-            }
-        }
-
-        @media only screen and (max-width:400px) {
-            #site-logo {
-                padding-top: .4em;
-                font-size: 1.5em;
-                width: 40em;
-            }
-
-            ul {
-                padding: 0;
-            }
-        }
-    </style>
+    @media only screen and (max-width:400px) {
+      #site-logo {
+        padding-top: .4em;
+        font-size: 1.5em;
+        width: 40em;
+      }
+    }
+  </style>
 </head>
 
 <body>
-    <div id="nav-container">
-        <div id="site-logo"><span class="logo-text">Appazon</span></div>
-        <div id="right-nav"></div>
-    </div>
-    <div id="content">
-        <center>
-            <h1>jQuery</h1>
-        </center>
-        <p>
-            jQuery is a popular open-source JavaScript library that simplifies and streamlines the process of developing
-            dynamic and interactive web pages. It was first released in 2006 by John Resig and has since become one of
-            the most widely used JavaScript libraries, with a large and active community of developers and contributors.
-        </p>
-        <p>
-            jQuery provides a powerful and easy-to-use API that allows developers to manipulate HTML documents, handle
-            events, create animations, and interact with server-side data using AJAX. Its syntax is designed to be
-            concise and intuitive, making it easier to write complex JavaScript code with less effort.
+  <div id="nav-container">
+    <div id="site-logo"><span class="logo-text">Appazon</span></div>
+    <div id="right-nav"></div>
+  </div>
+  <div id="content">
+    <center>
+      <h1>MongoDB</h1>
+    </center>
+    <p>
+      MongoDB is a popular open-source document-oriented NoSQL database system
+      that was first introduced in 2009 by the company MongoDB Inc. Unlike
+      traditional relational databases that store data in tables with fixed
+      schemas, MongoDB stores data in flexible, semi-structured JSON-like
+      documents with dynamic schemas, known as BSON.
+    </p>
 
-        <p><br>
-            Some of the key features of jQuery include:
-        </p>
-        </p>
-        <br>
-        <p>
-        <ul>
-            <li>DOM manipulation: jQuery provides a simple and powerful way to manipulate the Document Object Model
-                (DOM) of an HTML document. This includes selecting, adding, removing, and modifying HTML elements, as
-                well as changing their attributes and properties.</li>
-            To select an HTML element and change its text, you can use the following code:
-            <pre>
-<code class="jquery">
-// Select the element with ID "myElement" and change its text
-$("#myElement").text("New text");
+    <p>
+      MongoDB is designed to handle large volumes of unstructured or
+      semi-structured data, making it ideal for use in applications that require
+      high scalability, performance, and availability. It uses a distributed
+      architecture, where data is stored across multiple servers, making it
+      highly scalable and fault-tolerant. It also supports replication and
+      sharding, allowing data to be spread across multiple nodes in a cluster to
+      improve performance and reliability.
+    </p>
 
-</code>
-</pre>
-            To add a new element to the page, you can use the following code:
-            <pre>
-<code class="jquery">
-// Create a new &lt;p&gt; element and append it to the &lt;body&gt; element
-var newElement = $("&lt;p&gt;").text("This is a new paragraph.");
-$("body").append(newElement);
+    <p>
+      One of the key benefits of MongoDB is its ability to handle complex
+      queries and joins efficiently. MongoDB supports a powerful query language
+      that allows developers to perform advanced queries on data. It also
+      supports aggregation and map-reduce, making it possible to process large
+      volumes of data in real-time.
+    </p>
 
-</code>
-</pre>
-            <li>Event handling: jQuery simplifies the process of handling user events, such as mouse clicks and keyboard
-                inputs. It provides a consistent and cross-browser-compatible way to attach event handlers to HTML
-                elements and handle events in a consistent manner.</li>
-            To handle a click event on a button, you can use the following code:
-            <pre>
-<code class="jquery">
-// Attach a click event handler to the button with ID "myButton"
-$("#myButton").click(function() {
-  alert("Button clicked!");
-});
+    <p>
+      MongoDB is widely used in web development, mobile app development, and big
+      data analytics. It has a large and active community of developers and
+      users, who contribute to its development and maintenance. MongoDB offers a
+      range of tools and drivers for popular programming languages, making it
+      easy to integrate with existing applications.
+    </p>
 
-</code>
-</pre>
-            To handle a key press event on a text input, you can use the following code:
-            <pre>
-<code class="jquery">
-// Attach a key press event handler to the text input with ID "myInput"
-$("#myInput").keypress(function(event) {
-  console.log("Key pressed: " + event.which);
-});
+    <p>
+      In conclusion, MongoDB is a highly scalable and flexible NoSQL database
+      system that is ideal for handling large volumes of unstructured data. Its
+      document-oriented approach and powerful query language make it a popular
+      choice for web developers, mobile app developers, and data analysts.</p>
+    <br>
+    <hr>
+    <br>
+    <h2>MongoDB along with code</h2>
+    <p>
+      MongoDB is a NoSQL document-oriented database that stores data in flexible, JSON-like documents, which allows for
+      faster and more scalable data storage and retrieval. MongoDB is an open-source database that is commonly used in
+      modern web applications, particularly in systems with large volumes of unstructured or semi-structured data.
+    </p>
+    <p>
+      The following is an example code snippet that demonstrates how to create a MongoDB database, connect to it, insert
+      a document, and retrieve data from it using the MongoDB Node.js driver:
+    </p>
+    <pre>
+  <code class="mongodb">
+    // import the mongodb driver
+const { MongoClient } = require('mongodb');
 
-</code>
-</pre>
-            <li>AJAX: jQuery provides a simple and powerful API for making asynchronous HTTP requests to a server and
-                handling the response. This allows developers to build dynamic and interactive web pages that can update
-                their content without requiring a full page reload.</li>
-            To make an AJAX request to a server and update the page with the response, you can use the following code:
-            <pre>
-<code class="jquery">
-// Make an AJAX request to the server and update the &lt;div&gt; element with ID "myDiv" with the response
-$.ajax({
-  url: "/api/data",
-  type: "GET",
-  success: function(data) {
-    $("#myDiv").text(data);
+// Connection URI and database name
+const uri = 'mongodb://localhost:27017';
+const dbName = 'myDatabase';
+
+// Create a new MongoClient
+const client = new MongoClient(uri, { useNewUrlParser: true });
+
+// Connect to the MongoDB server
+client.connect(err => {
+  if (err) {
+    console.error(err);
+    return;
   }
+  
+  // Select the database
+  const db = client.db(dbName);
+
+  // Insert a document into the "users" collection
+  const users = db.collection('users');
+  const newUser = { name: 'John Doe', age: 30 };
+  users.insertOne(newUser, (err, result) => {
+    if (err) {
+      console.error(err);
+      return;
+    }
+    console.log(`Inserted document with _id: ${result.insertedId}`);
+  });
+
+  // Find all documents in the "users" collection
+  users.find().toArray((err, documents) => {
+    if (err) {
+      console.error(err);
+      return;
+    }
+    console.log(`Found ${documents.length} documents:`);
+    console.log(documents);
+  });
+
+  // Close the client
+  client.close();
 });
 
-</code>
-</pre>
-            <li>Animations: jQuery provides a powerful and easy-to-use animation API that allows developers to create
-                complex and visually appealing animations with minimal effort. This includes animating HTML elements,
-                CSS properties, and even entire HTML documents.</li>
-            To animate an HTML element, you can use the following code:
-            <pre>
-<code class="jquery">
-// Animate the element with ID "myElement" to fade out over 1 second
-$("#myElement").fadeOut(1000);
-
-</code>
-</pre>
-            <li>Plugins: jQuery has a large and active community of developers who have created a wide range of plugins
-                and extensions that extend the functionality of the library. These plugins can be easily integrated into
-                any jQuery project, allowing developers to add new features and functionality with minimal effort.</li>
-            To use a jQuery plugin, you can simply include its script file and use its API. For example, to use the
-            jQuery UI library to create a draggable element, you can use the following code:
-            <pre>
-<code class="jquery">
-// Include the jQuery UI script file
-&lt;script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"&gt;&lt;/script&gt;
-
-// Make the element with ID "myElement" draggable using the jQuery UI library
-$("#myElement").draggable();
-
-</code>
-</pre>
-            These are just a few examples of the many things you can do with jQuery. With its simple and intuitive API,
-            you can easily manipulate the DOM, handle events, make AJAX requests, create animations, and use plugins to
-            extend its functionality.
-        </ul>
-        <p>
-            Overall, jQuery is a powerful and versatile library that has revolutionized the way web developers
-            create dynamic and interactive web pages. Its simplicity and ease of use have made it a favorite among
-            developers of all skill levels, and its active community ensures that it will continue to evolve and
-            improve for years to come.
-        </p>
-        </ul>
-        </p>
-        <h3>From w3schools</h3>
-        <p>
-            Adding jQuery
-<pre>
-<code class="jquery">
-// In head section
-&lt;head&gt;
-&lt;script src="jquery-3.6.4.min.js"&gt;&lt;/script&gt;
-&lt;/head&gt;
-
-// Through CDN (Content Delivery Network)
-&lt;head&gt;
-&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"&gt;&lt;/script&gt;
-&lt;/head&gt;
-</code>
-</pre>
-        </p>
-        <p>jQuery Syntax</p>
-        <pre>
-  <code class="jquery">
-$(selector).action()
   </code>
 </pre>
-        <p>
-        <ul>
-            <li>$ sign to define jQuery</li>
-            <li>(selector) to "query (or find)" HTML elements</li>
-            <li>jQuery action() to be performed on the element(s)</li>
-        </ul>
-        </p>
-        <p>
-        <h3>Document Ready Event</h3>
-        <pre>
-        <code class="jquery">
-            $(document).ready(function(){
-                // jQuery methods go here...
-            })
-        </code>
-    </pre>
+    <p>
+      In this code, we first import the MongoDB driver and specify the connection URI and database name. We then create
+      a new MongoClient instance and connect to the MongoDB server using the connect() method. Once we're connected, we
+      select the desired database using the db() method.</p>
+    <p>
 
-        </p>
-        <p>
-            All jQuery methods are inside ready event, it's because it may be possible the image hasn't been loaded yet
-            and you are trying to get image size or trying to hide an element. Then you will get error.
-        </p>
-        <p>
-            Shorter method for document ready event:
-        </p>
-        <p>
-        <pre>
-        <code class="jquery">
-           $(function(){
-              // jQuery methods go here ....
-
-           })
-        </code>
-    </pre>
-        </p>
-        <h1>Selectors</h1>
-        <p>
-            Selectors allow you to select and manipulate HTML elements.
-        </p>
-
-<p>
-    $(*) -> Selects all elements<br>
-    $(this) -> Selects the current HTML element<br>
-    $("p:first") -> Selects the first &lt;p&gt; element<br>
-    For more visit this <a href="https://www.w3schools.com/jquery/jquery_selectors.asp">link</a>
-
-</p>
-<h1>Events</h1>
-<p>
+      Next, we insert a new document into the "users" collection using the insertOne() method, which takes a callback
+      function that is called with an error or a result object containing information about the inserted document.
+    </p>
+    <p>
+      Finally, we retrieve all documents in the "users" collection using the find() method, which returns a cursor that
+      we can convert to an array using the toArray() method. We log the retrieved documents to the console and close the
+      client connection using the close() method.</p>
+    <p>
+      Overall, MongoDB is a powerful and flexible database that is well-suited for modern web applications. Its support
+      for flexible data schemas and ease of use make it a popular choice for developers around the world.
+    </p>
+    <h1>
+      Create</h1>
+    <p>To create a new document in MongoDB, we can use the insertOne() method, as shown in the following example:</p>
     <pre>
-        click
-        dblclick
-        mouseenter
-        mouseleave
-        mousedown 
-        mousup
-        keypress
-        keydown
-        keyup
-        submit
-        change
-        focus
-        blur 
-        load
-        resize 
-        scroll 
-        unload 
-        hover 
-        on
-
+      <code class="mongodb">
+// Insert a new document into the "users" collection
+const newUser = { name: 'John Doe', age: 30 };
+db.collection('users').insertOne(newUser, (err, result) => {
+  if (err) {
+    console.error(err);
+    return;
+  }
+  console.log(`Inserted document with _id: ${result.insertedId}`);
+});
+      </code>
     </pre>
-</p>
+    <p>In this code, we first define a new user object and then use the insertOne() method to insert it into the "users"
+      collection. The method takes a callback function that is called with an error or a result object containing
+      information about the inserted document.</p>
+    <h1>Read</h1>
+    <p>To read data from MongoDB, we can use the find() method, as shown in the following example:</p>
+    <pre>
+      <code class="mongodb">
+// Find all documents in the "users" collection
+db.collection('users').find().toArray((err, documents) => {
+  if (err) {
+    console.error(err);
+    return;
+  }
+  console.log(`Found ${documents.length} documents:`);
+  console.log(documents);
+});
 
+      </code>
+    </pre>
+    <p>
+      In this code, we use the find() method to retrieve all documents from the "users" collection and convert the
+      resulting cursor to an array using the toArray() method. The method takes a callback function that is called with
+      an error or an array of documents.
+    </p>
+    <h1>Update</h1>
+    <p>
+      To update a document in MongoDB, we can use the updateOne() method, as shown in the following example:
+    </p>
+    <pre>
+      <code class="mongodb">
+// Update the age of the user with the name "John Doe"
+const filter = { name: 'John Doe' };
+const update = { $set: { age: 31 } };
+db.collection('users').updateOne(filter, update, (err, result) => {
+  if (err) {
+    console.error(err);
+    return;
+  }
+  console.log(`Updated ${result.modifiedCount} document.`);
+});
 
-        <script src="/blogs/script.js"></script>
-        <script src="/blogs/data.js"></script>
-        <script>
-            buildList(blogData);
-            buildBlogDescription(blogData);
-        </script>
-        <script src="/blogs/script.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
-        <script>
-            hljs.highlightAll();
-        </script>
-        </p>
+      </code>
+    </pre>
+    <p>
+      In this code, we first define a filter object that specifies which document to update and an update object that
+      specifies the new value of the "age" field. We then use the updateOne() method to update the matching document.
+      The method takes a callback function that is called with an error or a result object containing information about
+      the update operation.
+    </p>
+    <h1>Delete</h1>
+    <p>
+      To delete a document in MongoDB, we can use the deleteOne() method, as shown in the following example:
+    </p>
+    <pre>
+      <code class="mongodb">
+// Delete the user with the name "John Doe"
+const filter = { name: 'John Doe' };
+db.collection('users').deleteOne(filter, (err, result) => {
+  if (err) {
+    console.error(err);
+    return;
+  }
+  console.log(`Deleted ${result.deletedCount} document.`);
+});
+
+      </code>
+    </pre>
+    <p>
+      In this code, we first define a filter object that specifies which document to delete. We then use the deleteOne()
+      method to delete the matching document. The method takes a callback function that is called with an error or a
+      result object containing information about the delete operation.
+    </p>
+    <p>
+      Overall, these are the basic CRUD operations that you can perform on a MongoDB database. With these operations,
+      you can create, read, update, and delete documents in your database, giving you a powerful toolset for managing
+      data in your web applications.
+    </p>
+  </div>
+  <script src="/blogs/script.js"></script>
+  <script src="/blogs/data.js"></script>
+  <script>
+    buildList(blogData);
+    buildBlogDescription(blogData);
+  </script>
+  <script src="/blogs/script.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+  <script>
+    hljs.highlightAll();
+  </script>
+  </p>
 </body>
 
 </html>

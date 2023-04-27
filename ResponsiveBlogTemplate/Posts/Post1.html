@@ -2,343 +2,284 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Suresh Yadav -> Blogs</title>
-  <link rel="stylesheet" href="/assets/css/style.css" />
-  <link rel="stylesheet" href="/blogs/blogDesc.css" />
-  <link rel="stylesheet" href="/blogs/responsive.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Playfair+Display&display=swap" rel="stylesheet" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-  <!-- <link
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suresh Yadav -> Blogs</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/blogs/blogDesc.css" />
+    <link rel="stylesheet" href="/blogs/responsive.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Playfair+Display&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/base16/windows-high-contrast-light.min.css"
       integrity="sha512-RIdAP3pmTreNrljC6TbCIiZOOneyS9kgcjKIWHggive7iTbzgPdLQSd6jenVnKmEbRCe3iqDCkrR3oqinOGIGw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     /> -->
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/base16/windows-high-contrast.min.css"
-    integrity="sha512-SE4GvXE6j696nfjO1PEfQ1+3bfOya4A5bFXnUx8xYsFYRVBhY5RYGsp8lBZBIXD+Q+knAuhlMDh98rrXiuVMiQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- font awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <style>
-    p {
-      /* width: 100%; */
-      margin: auto;
-      padding: 0em 5em;
-      text-align: justify;
-      font-size: 1.2em;
-    }
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/base16/windows-high-contrast.min.css"
+        integrity="sha512-SE4GvXE6j696nfjO1PEfQ1+3bfOya4A5bFXnUx8xYsFYRVBhY5RYGsp8lBZBIXD+Q+knAuhlMDh98rrXiuVMiQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        p,
+        ul,h1,h2,h3 {
+            /* width: 100%; */
+            margin: auto;
+            padding: 0em 5em;
+            text-align: justify;
+            font-size: 1.2em;
+        }
 
-    .site-logo {
-      color: white;
-    }
+        ul {
+            margin: auto;
+            padding: 0em 8em;
+            font-size: 1.2em;
+            /* font-style: italic; */
+        }
 
-    #nav-container {
-      /* position:fixed; */
-      display: flex;
-      flex-direction: row;
-      background-color: #004b91;
-      /* width: 100%; */
-      height: 4rem;
-    }
+        li {
+            list-style: none;
+        }
 
-    #site-logo {
-      display: flex;
-      align-items: center;
-      justify-content: end;
-      text-transform: uppercase;
-      color: white;
-      font-family: "Playfair Display";
-      font-size: 2em;
-      height: 2em;
-      background-color: #004b91;
-      width: 10em;
-      padding-right: 0.5em;
-    }
+        .site-logo {
+            color: white;
+        }
 
-    /* .logo-text {
+        #nav-container {
+            /* position:fixed; */
+            display: flex;
+            flex-direction: row;
+            background-color: #004b91;
+            /* width: 100%; */
+            height: 4rem;
+        }
+
+        #site-logo {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            text-transform: uppercase;
+            color: white;
+            font-family: "Playfair Display";
+            font-size: 2em;
+            height: 2em;
+            background-color: #004b91;
+            width: 10em;
+            padding-right: 0.5em;
+        }
+
+        /* .logo-text {
             display: flex;
             flex-direction: row;
             justify-content: end;
           } */
-    #right-nav {
-      background-color: #196fc2;
-      width: 100em;
-    }
+        #right-nav {
+            background-color: #196fc2;
+            width: 100em;
+        }
 
-    pre {
-      width: 100%;
-      margin: auto;
-    }
+        pre {
+            width: 100%;
+            margin: auto;
+        }
 
-    @media only screen and (min-width:770px) {
-      pre {
-        width: 85%;
-      }
-    }
+        @media only screen and (min-width:770px) {
+            pre {
+                width: 85%;
+            }
+        }
 
-    @media only screen and (max-width:770px) {
-      p {
-        margin: .5em;
-        padding: 0;
-      }
+        @media only screen and (max-width:770px) {
 
-      #site-logo {
-        width: 30em;
-      }
-    }
+            p,
+            ul {
+                margin: .5em;
+                padding: 0;
+            }
 
-    @media only screen and (max-width:400px) {
-      #site-logo {
-        padding-top: .4em;
-        font-size: 1.5em;
-        width: 40em;
-      }
-    }
-  </style>
+            #site-logo {
+                width: 30em;
+            }
+
+            ul {
+                padding: 0;
+            }
+        }
+
+        @media only screen and (max-width:400px) {
+            #site-logo {
+                padding-top: .4em;
+                font-size: 1.5em;
+                width: 40em;
+            }
+
+            ul {
+                padding: 0;
+            }
+        }
+    </style>
 </head>
 
 <body>
-  <div id="nav-container">
-    <div id="site-logo"><span class="logo-text">Appazon</span></div>
-    <div id="right-nav"></div>
-  </div>
-  <div id="content">
-    <center>
-      <h1>MongoDB</h1>
-    </center>
-    <p>
-      MongoDB is a popular open-source document-oriented NoSQL database system
-      that was first introduced in 2009 by the company MongoDB Inc. Unlike
-      traditional relational databases that store data in tables with fixed
-      schemas, MongoDB stores data in flexible, semi-structured JSON-like
-      documents with dynamic schemas, known as BSON.
-    </p>
+    <div id="nav-container">
+        <div id="site-logo"><span class="logo-text">Appazon</span></div>
+        <div id="right-nav"></div>
+    </div>
+    <div id="content">
+        <center>
+            <h1>DSA</h1>
+        </center>
+        <p>
+            DSA stands for Data Structures and Algorithms, which is a fundamental topic in computer science and
+            programming. It involves studying the different ways data can be organized and manipulated, and the
+            different techniques that can be used to solve problems efficiently.</p><br>
+        <p>
+            Data structures are essentially the different ways that data can be organized and stored in a program or
+            computer memory. Common data structures include arrays, linked lists, stacks, queues, trees, and graphs.
+            Each of these data structures has its own strengths and weaknesses in terms of storage efficiency and
+            retrieval speed, and they can be used in different scenarios depending on the specific needs of a program.
+        </p><br>
+        <p>
+            Algorithms, on the other hand, are the different methods that can be used to manipulate and process data
+            structures. This includes things like sorting algorithms (such as bubble sort, insertion sort, quicksort,
+            and mergesort), search algorithms (such as linear search, binary search, and depth-first search), and graph
+            algorithms (such as Dijkstra's algorithm and breadth-first search). Each algorithm has its own complexity
+            and efficiency, and choosing the right algorithm can have a significant impact on the performance of a
+            program.</p><br>
+        <p>
+            DSA is an essential topic for any aspiring computer scientist or software developer, as it provides a solid
+            foundation for understanding how programs work and how to design them efficiently. It is also an important
+            topic for anyone interested in competitive programming, as it is often used as a basis for coding challenges
+            and coding competitions.</p><br><br>
+        <p>
+            There are many different types of data structures that are commonly used in computer programming. Here are
+            some of the most common ones:
 
-    <p>
-      MongoDB is designed to handle large volumes of unstructured or
-      semi-structured data, making it ideal for use in applications that require
-      high scalability, performance, and availability. It uses a distributed
-      architecture, where data is stored across multiple servers, making it
-      highly scalable and fault-tolerant. It also supports replication and
-      sharding, allowing data to be spread across multiple nodes in a cluster to
-      improve performance and reliability.
-    </p>
+        <ul><br>
+            <li>
+                <b>Arrays</b>: A collection of elements of the same data type, arranged in a contiguous block of memory.
+            </li>
+            <br>
+            <li>
+                <b>Linked Lists</b>: A data structure in which each element (node) contains a reference to the next
+                node,
+                forming a chain.
+            </li>
+            <br>
+            <li>
+                <b>Stacks</b>: A data structure in which elements are added and removed from one end only (the top).
+            </li>
+            <br>
+            <li>
+                <b>Queues</b>: A data structure in which elements are added at one end (the rear) and removed from the
+                other
+                end (the front).
+            </li>
+            <br>
+            <li>
+                <b>Trees</b>: A data structure that consists of nodes connected by edges, with each node having zero or
+                more
+                children.
+            </li>
+            <br>
+            <li>
+                <b>Graphs</b>: A data structure consisting of a set of nodes (vertices) and a set of edges connecting
+                them.
+            </li>
+            <br>
+            <li>
+                <b>Hash Tables</b>: A data structure that maps keys to values, allowing for fast retrieval of values
+                based on
+                their keys.
+            </li>
+            <br>
+            <li>
+                <b>Heaps</b>: A specialized tree-based data structure that maintains a partial ordering of its elements.
+            </li>
+            <br>
+            <li>
+                <b>Tries</b>: A tree-like data structure used to store and retrieve associative data.
+            </li>
+            <br>
+            <li>
+                <b>Sets</b>: A collection of unique elements, typically implemented using a hash table or a tree.
+            </li>
+            <br>
+            <li>
+                <b>Queues with Priority</b>: A data structure similar to a queue, but with each element assigned a
+                priority,
+                allowing for elements to be removed in order of priority.
+            </li>
+        </ul>
+        </p><br>
+        <p>
+            These are just a few examples of the many data structures that exist, and each has its own strengths and
+            weaknesses in terms of storage efficiency, retrieval speed, and other factors. Choosing the right data
+            structure for a particular task is an important part of efficient programming.
+        </p>
+        <br><br>
+        <h1>Algorithms</h1>
+        <p>
+            There are many different algorithms that are commonly used in computer programming. Here are some of the
+            most common ones:
+        <ul>
+            <li><b>Sorting Algorithms</b>: Sorting algorithms are used to arrange elements in a particular order, such
+                as
+                ascending or descending. Some popular sorting algorithms include bubble sort, insertion sort, selection
+                sort, merge sort, quicksort, and heapsort.</li><br>
+            <li><b>Searching Algorithms</b>: Searching algorithms are used to find a particular value within a data
+                structure.
+                Some popular searching algorithms include linear search, binary search, and interpolation search.</li>
+            <br>
+            <li><b>Graph Algorithms</b>: Graph algorithms are used to traverse and analyze graphs, which are structures
+                consisting of vertices (nodes) and edges connecting them. Some popular graph algorithms include
+                Dijkstra's algorithm, Bellman-Ford algorithm, Kruskal's algorithm, and Prim's algorithm.</li><br>
+            <li><b>Dynamic Programming Algorithms</b>: Dynamic programming algorithms are used to solve optimization
+                problems
+                by breaking them down into smaller subproblems and solving them recursively. Some popular dynamic
+                programming algorithms include the Knapsack problem, Longest Common Subsequence, and Floyd-Warshall
+                algorithm.</li><br>
+            <li><b>Divide and Conquer Algorithms</b>: Divide and conquer algorithms are used to solve problems by
+                breaking them
+                down into smaller subproblems and solving them recursively. Some popular divide and conquer algorithms
+                include binary search, quicksort, and merge sort.</li><br>
+            <li><b>Greedy Algorithms</b>: Greedy algorithms are used to solve optimization problems by making locally
+                optimal
+                choices at each step in the hope of finding a global optimum. Some popular greedy algorithms include the
+                Huffman coding algorithm and the Kruskal's algorithm.</li><br>
+            <li><b>Backtracking Algorithms</b>: Backtracking algorithms are used to solve problems by trying out
+                different
+                solutions and undoing them if they don't work, until a solution is found. Some popular backtracking
+                algorithms include the N-Queens problem and the Sudoku solver.</li><br>
 
-    <p>
-      One of the key benefits of MongoDB is its ability to handle complex
-      queries and joins efficiently. MongoDB supports a powerful query language
-      that allows developers to perform advanced queries on data. It also
-      supports aggregation and map-reduce, making it possible to process large
-      volumes of data in real-time.
-    </p>
-
-    <p>
-      MongoDB is widely used in web development, mobile app development, and big
-      data analytics. It has a large and active community of developers and
-      users, who contribute to its development and maintenance. MongoDB offers a
-      range of tools and drivers for popular programming languages, making it
-      easy to integrate with existing applications.
-    </p>
-
-    <p>
-      In conclusion, MongoDB is a highly scalable and flexible NoSQL database
-      system that is ideal for handling large volumes of unstructured data. Its
-      document-oriented approach and powerful query language make it a popular
-      choice for web developers, mobile app developers, and data analysts.</p>
-    <br>
-    <hr>
-    <br>
-    <h2>MongoDB along with code</h2>
-    <p>
-      MongoDB is a NoSQL document-oriented database that stores data in flexible, JSON-like documents, which allows for
-      faster and more scalable data storage and retrieval. MongoDB is an open-source database that is commonly used in
-      modern web applications, particularly in systems with large volumes of unstructured or semi-structured data.
-    </p>
-    <p>
-      The following is an example code snippet that demonstrates how to create a MongoDB database, connect to it, insert
-      a document, and retrieve data from it using the MongoDB Node.js driver:
-    </p>
-    <pre>
-  <code class="mongodb">
-    // import the mongodb driver
-const { MongoClient } = require('mongodb');
-
-// Connection URI and database name
-const uri = 'mongodb://localhost:27017';
-const dbName = 'myDatabase';
-
-// Create a new MongoClient
-const client = new MongoClient(uri, { useNewUrlParser: true });
-
-// Connect to the MongoDB server
-client.connect(err => {
-  if (err) {
-    console.error(err);
-    return;
-  }
-  
-  // Select the database
-  const db = client.db(dbName);
-
-  // Insert a document into the "users" collection
-  const users = db.collection('users');
-  const newUser = { name: 'John Doe', age: 30 };
-  users.insertOne(newUser, (err, result) => {
-    if (err) {
-      console.error(err);
-      return;
-    }
-    console.log(`Inserted document with _id: ${result.insertedId}`);
-  });
-
-  // Find all documents in the "users" collection
-  users.find().toArray((err, documents) => {
-    if (err) {
-      console.error(err);
-      return;
-    }
-    console.log(`Found ${documents.length} documents:`);
-    console.log(documents);
-  });
-
-  // Close the client
-  client.close();
-});
-
-  </code>
-</pre>
-    <p>
-      In this code, we first import the MongoDB driver and specify the connection URI and database name. We then create
-      a new MongoClient instance and connect to the MongoDB server using the connect() method. Once we're connected, we
-      select the desired database using the db() method.</p>
-    <p>
-
-      Next, we insert a new document into the "users" collection using the insertOne() method, which takes a callback
-      function that is called with an error or a result object containing information about the inserted document.
-    </p>
-    <p>
-      Finally, we retrieve all documents in the "users" collection using the find() method, which returns a cursor that
-      we can convert to an array using the toArray() method. We log the retrieved documents to the console and close the
-      client connection using the close() method.</p>
-    <p>
-      Overall, MongoDB is a powerful and flexible database that is well-suited for modern web applications. Its support
-      for flexible data schemas and ease of use make it a popular choice for developers around the world.
-    </p>
-    <h1>
-      Create</h1>
-    <p>To create a new document in MongoDB, we can use the insertOne() method, as shown in the following example:</p>
-    <pre>
-      <code class="mongodb">
-// Insert a new document into the "users" collection
-const newUser = { name: 'John Doe', age: 30 };
-db.collection('users').insertOne(newUser, (err, result) => {
-  if (err) {
-    console.error(err);
-    return;
-  }
-  console.log(`Inserted document with _id: ${result.insertedId}`);
-});
-      </code>
-    </pre>
-    <p>In this code, we first define a new user object and then use the insertOne() method to insert it into the "users"
-      collection. The method takes a callback function that is called with an error or a result object containing
-      information about the inserted document.</p>
-    <h1>Read</h1>
-    <p>To read data from MongoDB, we can use the find() method, as shown in the following example:</p>
-    <pre>
-      <code class="mongodb">
-// Find all documents in the "users" collection
-db.collection('users').find().toArray((err, documents) => {
-  if (err) {
-    console.error(err);
-    return;
-  }
-  console.log(`Found ${documents.length} documents:`);
-  console.log(documents);
-});
-
-      </code>
-    </pre>
-    <p>
-      In this code, we use the find() method to retrieve all documents from the "users" collection and convert the
-      resulting cursor to an array using the toArray() method. The method takes a callback function that is called with
-      an error or an array of documents.
-    </p>
-    <h1>Update</h1>
-    <p>
-      To update a document in MongoDB, we can use the updateOne() method, as shown in the following example:
-    </p>
-    <pre>
-      <code class="mongodb">
-// Update the age of the user with the name "John Doe"
-const filter = { name: 'John Doe' };
-const update = { $set: { age: 31 } };
-db.collection('users').updateOne(filter, update, (err, result) => {
-  if (err) {
-    console.error(err);
-    return;
-  }
-  console.log(`Updated ${result.modifiedCount} document.`);
-});
-
-      </code>
-    </pre>
-    <p>
-      In this code, we first define a filter object that specifies which document to update and an update object that
-      specifies the new value of the "age" field. We then use the updateOne() method to update the matching document.
-      The method takes a callback function that is called with an error or a result object containing information about
-      the update operation.
-    </p>
-    <h1>Delete</h1>
-    <p>
-      To delete a document in MongoDB, we can use the deleteOne() method, as shown in the following example:
-    </p>
-    <pre>
-      <code class="mongodb">
-// Delete the user with the name "John Doe"
-const filter = { name: 'John Doe' };
-db.collection('users').deleteOne(filter, (err, result) => {
-  if (err) {
-    console.error(err);
-    return;
-  }
-  console.log(`Deleted ${result.deletedCount} document.`);
-});
-
-      </code>
-    </pre>
-    <p>
-      In this code, we first define a filter object that specifies which document to delete. We then use the deleteOne()
-      method to delete the matching document. The method takes a callback function that is called with an error or a
-      result object containing information about the delete operation.
-    </p>
-    <p>
-      Overall, these are the basic CRUD operations that you can perform on a MongoDB database. With these operations,
-      you can create, read, update, and delete documents in your database, giving you a powerful toolset for managing
-      data in your web applications.
-    </p>
-  </div>
-  <script src="/blogs/script.js"></script>
-  <script src="/blogs/data.js"></script>
-  <script>
-    buildList(blogData);
-    buildBlogDescription(blogData);
-  </script>
-  <script src="/blogs/script.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
-  <script>
-    hljs.highlightAll();
-  </script>
-  </p>
+        </ul>
+        <p>
+            These are just a few examples of the many algorithms that exist, and each has its own strengths and
+            weaknesses in terms of time complexity, space complexity, and other factors. Choosing the right algorithm
+            for a particular task is an important part of efficient programming.
+        </p>
+        </p>
+        <script src="/blogs/script.js"></script>
+        <script src="/blogs/data.js"></script>
+        <script>
+            buildList(blogData);
+            buildBlogDescription(blogData);
+        </script>
+        <script src="/blogs/script.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+        <script>
+            hljs.highlightAll();
+        </script>
+        </p>
 </body>
 
 </html>

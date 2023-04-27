@@ -30,8 +30,15 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
+        body {
+            background-color: rgb(230, 228, 228);
+        }
+
         p,
-        ul,h1,h2,h3 {
+        h1,
+        h2,
+        h3,
+        table {
             /* width: 100%; */
             margin: auto;
             padding: 0em 5em;
@@ -43,11 +50,7 @@
             margin: auto;
             padding: 0em 8em;
             font-size: 1.2em;
-            /* font-style: italic; */
-        }
-
-        li {
-            list-style: none;
+            font-style: italic;
         }
 
         .site-logo {
@@ -99,9 +102,7 @@
         }
 
         @media only screen and (max-width:770px) {
-
-            p,
-            ul {
+            p {
                 margin: .5em;
                 padding: 0;
             }
@@ -136,138 +137,220 @@
     </div>
     <div id="content">
         <center>
-            <h1>Data Structures and Algorithms</h1>
+            <h1>jQuery</h1>
         </center>
         <p>
-            DSA stands for Data Structures and Algorithms, which is a fundamental topic in computer science and
-            programming. It involves studying the different ways data can be organized and manipulated, and the
-            different techniques that can be used to solve problems efficiently.</p><br>
-        <p>
-            Data structures are essentially the different ways that data can be organized and stored in a program or
-            computer memory. Common data structures include arrays, linked lists, stacks, queues, trees, and graphs.
-            Each of these data structures has its own strengths and weaknesses in terms of storage efficiency and
-            retrieval speed, and they can be used in different scenarios depending on the specific needs of a program.
-        </p><br>
-        <p>
-            Algorithms, on the other hand, are the different methods that can be used to manipulate and process data
-            structures. This includes things like sorting algorithms (such as bubble sort, insertion sort, quicksort,
-            and mergesort), search algorithms (such as linear search, binary search, and depth-first search), and graph
-            algorithms (such as Dijkstra's algorithm and breadth-first search). Each algorithm has its own complexity
-            and efficiency, and choosing the right algorithm can have a significant impact on the performance of a
-            program.</p><br>
-        <p>
-            DSA is an essential topic for any aspiring computer scientist or software developer, as it provides a solid
-            foundation for understanding how programs work and how to design them efficiently. It is also an important
-            topic for anyone interested in competitive programming, as it is often used as a basis for coding challenges
-            and coding competitions.</p><br><br>
-        <p>
-            There are many different types of data structures that are commonly used in computer programming. Here are
-            some of the most common ones:
-
-        <ul><br>
-            <li>
-                <b>Arrays</b>: A collection of elements of the same data type, arranged in a contiguous block of memory.
-            </li>
-            <br>
-            <li>
-                <b>Linked Lists</b>: A data structure in which each element (node) contains a reference to the next
-                node,
-                forming a chain.
-            </li>
-            <br>
-            <li>
-                <b>Stacks</b>: A data structure in which elements are added and removed from one end only (the top).
-            </li>
-            <br>
-            <li>
-                <b>Queues</b>: A data structure in which elements are added at one end (the rear) and removed from the
-                other
-                end (the front).
-            </li>
-            <br>
-            <li>
-                <b>Trees</b>: A data structure that consists of nodes connected by edges, with each node having zero or
-                more
-                children.
-            </li>
-            <br>
-            <li>
-                <b>Graphs</b>: A data structure consisting of a set of nodes (vertices) and a set of edges connecting
-                them.
-            </li>
-            <br>
-            <li>
-                <b>Hash Tables</b>: A data structure that maps keys to values, allowing for fast retrieval of values
-                based on
-                their keys.
-            </li>
-            <br>
-            <li>
-                <b>Heaps</b>: A specialized tree-based data structure that maintains a partial ordering of its elements.
-            </li>
-            <br>
-            <li>
-                <b>Tries</b>: A tree-like data structure used to store and retrieve associative data.
-            </li>
-            <br>
-            <li>
-                <b>Sets</b>: A collection of unique elements, typically implemented using a hash table or a tree.
-            </li>
-            <br>
-            <li>
-                <b>Queues with Priority</b>: A data structure similar to a queue, but with each element assigned a
-                priority,
-                allowing for elements to be removed in order of priority.
-            </li>
-        </ul>
-        </p><br>
-        <p>
-            These are just a few examples of the many data structures that exist, and each has its own strengths and
-            weaknesses in terms of storage efficiency, retrieval speed, and other factors. Choosing the right data
-            structure for a particular task is an important part of efficient programming.
+            jQuery is a popular open-source JavaScript library that simplifies and streamlines the process of developing
+            dynamic and interactive web pages. It was first released in 2006 by John Resig and has since become one of
+            the most widely used JavaScript libraries, with a large and active community of developers and contributors.
         </p>
-        <br><br>
-        <h1>Algorithms</h1>
         <p>
-            There are many different algorithms that are commonly used in computer programming. Here are some of the
-            most common ones:
+            jQuery provides a powerful and easy-to-use API that allows developers to manipulate HTML documents, handle
+            events, create animations, and interact with server-side data using AJAX. Its syntax is designed to be
+            concise and intuitive, making it easier to write complex JavaScript code with less effort.
+
+        <p><br>
+            Some of the key features of jQuery include:
+        </p>
+        </p>
+        <br>
+        <p>
         <ul>
-            <li><b>Sorting Algorithms</b>: Sorting algorithms are used to arrange elements in a particular order, such
-                as
-                ascending or descending. Some popular sorting algorithms include bubble sort, insertion sort, selection
-                sort, merge sort, quicksort, and heapsort.</li><br>
-            <li><b>Searching Algorithms</b>: Searching algorithms are used to find a particular value within a data
-                structure.
-                Some popular searching algorithms include linear search, binary search, and interpolation search.</li>
-            <br>
-            <li><b>Graph Algorithms</b>: Graph algorithms are used to traverse and analyze graphs, which are structures
-                consisting of vertices (nodes) and edges connecting them. Some popular graph algorithms include
-                Dijkstra's algorithm, Bellman-Ford algorithm, Kruskal's algorithm, and Prim's algorithm.</li><br>
-            <li><b>Dynamic Programming Algorithms</b>: Dynamic programming algorithms are used to solve optimization
-                problems
-                by breaking them down into smaller subproblems and solving them recursively. Some popular dynamic
-                programming algorithms include the Knapsack problem, Longest Common Subsequence, and Floyd-Warshall
-                algorithm.</li><br>
-            <li><b>Divide and Conquer Algorithms</b>: Divide and conquer algorithms are used to solve problems by
-                breaking them
-                down into smaller subproblems and solving them recursively. Some popular divide and conquer algorithms
-                include binary search, quicksort, and merge sort.</li><br>
-            <li><b>Greedy Algorithms</b>: Greedy algorithms are used to solve optimization problems by making locally
-                optimal
-                choices at each step in the hope of finding a global optimum. Some popular greedy algorithms include the
-                Huffman coding algorithm and the Kruskal's algorithm.</li><br>
-            <li><b>Backtracking Algorithms</b>: Backtracking algorithms are used to solve problems by trying out
-                different
-                solutions and undoing them if they don't work, until a solution is found. Some popular backtracking
-                algorithms include the N-Queens problem and the Sudoku solver.</li><br>
+            <li>DOM manipulation: jQuery provides a simple and powerful way to manipulate the Document Object Model
+                (DOM) of an HTML document. This includes selecting, adding, removing, and modifying HTML elements, as
+                well as changing their attributes and properties.</li>
+            To select an HTML element and change its text, you can use the following code:
+            <pre>
+<code class="jquery">
+// Select the element with ID "myElement" and change its text
+$("#myElement").text("New text");
 
+</code>
+</pre>
+            To add a new element to the page, you can use the following code:
+            <pre>
+<code class="jquery">
+// Create a new &lt;p&gt; element and append it to the &lt;body&gt; element
+var newElement = $("&lt;p&gt;").text("This is a new paragraph.");
+$("body").append(newElement);
+
+</code>
+</pre>
+            <li>Event handling: jQuery simplifies the process of handling user events, such as mouse clicks and keyboard
+                inputs. It provides a consistent and cross-browser-compatible way to attach event handlers to HTML
+                elements and handle events in a consistent manner.</li>
+            To handle a click event on a button, you can use the following code:
+            <pre>
+<code class="jquery">
+// Attach a click event handler to the button with ID "myButton"
+$("#myButton").click(function() {
+  alert("Button clicked!");
+});
+
+</code>
+</pre>
+            To handle a key press event on a text input, you can use the following code:
+            <pre>
+<code class="jquery">
+// Attach a key press event handler to the text input with ID "myInput"
+$("#myInput").keypress(function(event) {
+  console.log("Key pressed: " + event.which);
+});
+
+</code>
+</pre>
+            <li>AJAX: jQuery provides a simple and powerful API for making asynchronous HTTP requests to a server and
+                handling the response. This allows developers to build dynamic and interactive web pages that can update
+                their content without requiring a full page reload.</li>
+            To make an AJAX request to a server and update the page with the response, you can use the following code:
+            <pre>
+<code class="jquery">
+// Make an AJAX request to the server and update the &lt;div&gt; element with ID "myDiv" with the response
+$.ajax({
+  url: "/api/data",
+  type: "GET",
+  success: function(data) {
+    $("#myDiv").text(data);
+  }
+});
+
+</code>
+</pre>
+            <li>Animations: jQuery provides a powerful and easy-to-use animation API that allows developers to create
+                complex and visually appealing animations with minimal effort. This includes animating HTML elements,
+                CSS properties, and even entire HTML documents.</li>
+            To animate an HTML element, you can use the following code:
+            <pre>
+<code class="jquery">
+// Animate the element with ID "myElement" to fade out over 1 second
+$("#myElement").fadeOut(1000);
+
+</code>
+</pre>
+            <li>Plugins: jQuery has a large and active community of developers who have created a wide range of plugins
+                and extensions that extend the functionality of the library. These plugins can be easily integrated into
+                any jQuery project, allowing developers to add new features and functionality with minimal effort.</li>
+            To use a jQuery plugin, you can simply include its script file and use its API. For example, to use the
+            jQuery UI library to create a draggable element, you can use the following code:
+            <pre>
+<code class="jquery">
+// Include the jQuery UI script file
+&lt;script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"&gt;&lt;/script&gt;
+
+// Make the element with ID "myElement" draggable using the jQuery UI library
+$("#myElement").draggable();
+
+</code>
+</pre>
+            These are just a few examples of the many things you can do with jQuery. With its simple and intuitive API,
+            you can easily manipulate the DOM, handle events, make AJAX requests, create animations, and use plugins to
+            extend its functionality.
         </ul>
         <p>
-            These are just a few examples of the many algorithms that exist, and each has its own strengths and
-            weaknesses in terms of time complexity, space complexity, and other factors. Choosing the right algorithm
-            for a particular task is an important part of efficient programming.
+            Overall, jQuery is a powerful and versatile library that has revolutionized the way web developers
+            create dynamic and interactive web pages. Its simplicity and ease of use have made it a favorite among
+            developers of all skill levels, and its active community ensures that it will continue to evolve and
+            improve for years to come.
         </p>
+        </ul>
         </p>
+        <h3>From w3schools</h3>
+        <p>
+            Adding jQuery
+<pre>
+<code class="jquery">
+// In head section
+&lt;head&gt;
+&lt;script src="jquery-3.6.4.min.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+
+// Through CDN (Content Delivery Network)
+&lt;head&gt;
+&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+</code>
+</pre>
+        </p>
+        <p>jQuery Syntax</p>
+        <pre>
+  <code class="jquery">
+$(selector).action()
+  </code>
+</pre>
+        <p>
+        <ul>
+            <li>$ sign to define jQuery</li>
+            <li>(selector) to "query (or find)" HTML elements</li>
+            <li>jQuery action() to be performed on the element(s)</li>
+        </ul>
+        </p>
+        <p>
+        <h3>Document Ready Event</h3>
+        <pre>
+        <code class="jquery">
+            $(document).ready(function(){
+                // jQuery methods go here...
+            })
+        </code>
+    </pre>
+
+        </p>
+        <p>
+            All jQuery methods are inside ready event, it's because it may be possible the image hasn't been loaded yet
+            and you are trying to get image size or trying to hide an element. Then you will get error.
+        </p>
+        <p>
+            Shorter method for document ready event:
+        </p>
+        <p>
+        <pre>
+        <code class="jquery">
+           $(function(){
+              // jQuery methods go here ....
+
+           })
+        </code>
+    </pre>
+        </p>
+        <h1>Selectors</h1>
+        <p>
+            Selectors allow you to select and manipulate HTML elements.
+        </p>
+
+<p>
+    $(*) -> Selects all elements<br>
+    $(this) -> Selects the current HTML element<br>
+    $("p:first") -> Selects the first &lt;p&gt; element<br>
+    For more visit this <a href="https://www.w3schools.com/jquery/jquery_selectors.asp">link</a>
+
+</p>
+<h1>Events</h1>
+<p>
+    <pre>
+        click
+        dblclick
+        mouseenter
+        mouseleave
+        mousedown 
+        mousup
+        keypress
+        keydown
+        keyup
+        submit
+        change
+        focus
+        blur 
+        load
+        resize 
+        scroll 
+        unload 
+        hover 
+        on
+
+    </pre>
+</p>
+
+
         <script src="/blogs/script.js"></script>
         <script src="/blogs/data.js"></script>
         <script>
