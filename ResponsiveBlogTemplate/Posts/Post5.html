@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suresh Yadav -> Blogs</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/blogs/blogDesc.css" />
+    <link rel="stylesheet" href="/blogs/responsive.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Playfair+Display&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/base16/windows-high-contrast-light.min.css"
+      integrity="sha512-RIdAP3pmTreNrljC6TbCIiZOOneyS9kgcjKIWHggive7iTbzgPdLQSd6jenVnKmEbRCe3iqDCkrR3oqinOGIGw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    /> -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/base16/windows-high-contrast.min.css"
+        integrity="sha512-SE4GvXE6j696nfjO1PEfQ1+3bfOya4A5bFXnUx8xYsFYRVBhY5RYGsp8lBZBIXD+Q+knAuhlMDh98rrXiuVMiQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        p {
+            /* width: 100%; */
+            margin: auto;
+            padding: 0em 5em;
+            text-align: justify;
+            font-size: 1.2em;
+        }
+
+        .site-logo {
+            color: white;
+        }
+
+        #nav-container {
+            /* position:fixed; */
+            display: flex;
+            flex-direction: row;
+            background-color: #004b91;
+            /* width: 100%; */
+            height: 4rem;
+        }
+
+        #site-logo {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            text-transform: uppercase;
+            color: white;
+            font-family: "Playfair Display";
+            font-size: 2em;
+            height: 2em;
+            background-color: #004b91;
+            width: 10em;
+            padding-right: 0.5em;
+        }
+
+        /* .logo-text {
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+          } */
+        #right-nav {
+            background-color: #196fc2;
+            width: 100em;
+        }
+
+        pre {
+            width: 100%;
+            margin: auto;
+        }
+
+        @media only screen and (min-width:770px) {
+            pre {
+                width: 85%;
+            }
+        }
+
+        @media only screen and (max-width:770px) {
+            p {
+                margin: .5em;
+                padding: 0;
+            }
+
+            #site-logo {
+                width: 30em;
+            }
+        }
+
+        @media only screen and (max-width:400px) {
+            #site-logo {
+                padding-top: .4em;
+                font-size: 1.5em;
+                width: 40em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav-container">
+        <div id="site-logo"><span class="logo-text">Appazon</span></div>
+        <div id="right-nav"></div>
+    </div>
+    <div id="content">
+        <center>
+            <h1>Node.js</h1>
+        </center>
+        <p>
+            Node.js is an open-source, cross-platform JavaScript runtime environment that allows developers to build
+            server-side applications using JavaScript. It is built on top of the V8 JavaScript engine from Google Chrome
+            and is designed to be fast, scalable, and lightweight.
+        </p>
+
+        <p>
+            Node.js provides a number of built-in modules that make it easy to perform common tasks such as working with
+            the file system, handling HTTP requests, and processing data. It also has a large ecosystem of third-party
+            modules and libraries that can be easily installed and used in your applications.
+        </p>
+
+        <p>
+            Here is an example of how to use Node.js to create a simple web server:
+        </p>
+
+
+        <pre>
+  <code class="node">
+const http = require('http');
+
+// Create a server object
+const server = http.createServer((req, res) => {
+  // Set the response header
+  res.writeHead(200, {'Content-Type': 'text/html'});
+  
+  // Send the response
+  res.end('Hello, world!');
+});
+
+// Start the server listening on port 3000
+server.listen(3000, () => {
+  console.log('Server started on port 3000');
+});
+
+  </code>
+</pre>
+        <p>
+            In this example, we're creating a simple HTTP server using the built-in http module. We create a server
+            object using the createServer method and pass it a callback function that will be called for each incoming
+            request.
+        </p>
+        <p>
+
+            In the callback function, we set the response header to indicate that we're sending HTML content, and then
+            we send the response body, which in this case is just a simple string.
+        </p>
+        <p>
+            Finally, we start the server listening on port 3000 with the listen method. This will start the server and
+            log a message to the console once it's ready to accept requests.
+        </p>
+        <p>
+            Of course, this is just a very basic example. Node.js provides many more features and tools for building
+            server-side applications, such as the ability to handle multiple requests simultaneously using non-blocking
+            I/O and the EventEmitter module for building event-driven applications. But hopefully, this gives you a
+            sense of how Node.js works and how you can use it to build web servers and other types of applications.
+        </p>
+        <p>
+            Additionally, Node.js has a built-in package manager called npm (Node Package Manager), which provides
+            access to a vast array of third-party packages that can be easily installed and used in your Node.js
+            applications. This makes it easy to add functionality to your applications without having to write all the
+            code yourself.
+        </p>
+        <p>
+            Here is an example of how to use npm to install the popular express package and use it in a Node.js
+            application:
+        </p>
+        <p>
+            1. First, we need to create a new Node.js project by running the following command in a terminal:
+        </p>
+        <pre>
+<code class="node">
+mkdir my-project
+cd my-project
+npm init
+
+</code>
+</pre>
+        <p>
+            This will create a new directory called my-project and initialize a new Node.js project with a package.json
+            file, which will contain information about our project and its dependencies.
+        </p>
+        <p>
+            2. Next, we can install the express package by running the following command:
+        </p>
+        <pre>
+<code class="node">
+npm install express
+
+</code>
+</pre>
+        <p>
+            This will download the express package and all of its dependencies and add them to our project's
+            node_modules directory.
+        </p>
+        <p>
+            3. Finally, we can use express in our Node.js application by requiring it and using it to create a new web
+            server:
+        </p>
+        <pre>
+<code class="node">
+const express = require('express');
+
+const app = express();
+
+app.get('/', (req, res) => {
+  res.send('Hello, world!');
+});
+
+app.listen(3000, () => {
+  console.log('Server started on port 3000');
+});
+
+</code>
+</pre>
+        <p>
+            In this example, we're creating a new express application and defining a single route for the home page.
+            When a user visits the home page (/), the callback function will be called, and express will send a response
+            with the appropriate content.
+        </p>
+        <p>
+            Overall, Node.js is a powerful and flexible platform for building server-side applications using JavaScript.
+            Its built-in modules and third-party packages make it easy to perform common tasks and add new
+            functionality, and its event-driven architecture and non-blocking I/O make it highly scalable and
+            performant.
+        </p>
+    </div>
+    <script src="/blogs/script.js"></script>
+    <script src="/blogs/data.js"></script>
+    <script>
+        buildList(blogData);
+        buildBlogDescription(blogData);
+    </script>
+    <script src="/blogs/script.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+    </p>
+</body>
+
+</html>
