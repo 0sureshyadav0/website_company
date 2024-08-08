@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Permanent+Marker&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  /* background-color: grey; */
+}
+
+.firstHalf {
+  position: absolute;
+  height: 50vh;
+  width: 100%;
+  top:0vh;
+  background-color: rgb(103, 102, 102);
+  z-index: 999;
+}
+.secondHalf {
+  position: absolute;
+  width: 100%;
+  height: 50vh;
+  top:50vh;
+  background-color: rgb(103, 102, 102);
+  z-index: 999;
+}
+.firstHalf.firstHalfAfterLoading {
+  background-color:rgb(103, 102, 102);
+  animation: firstHalf 2s ease-in-out;
+}
+.secondHalf.secondHalfAfterLoading {
+  /* height: 50vh; */
+  background-color: rgb(103, 102, 102);
+  animation: secondHalf 2s ease-in-out;
+}
+@keyframes firstHalf {
+  to {
+    transform: translateY(-370px);
+  }
+}
+@keyframes secondHalf {
+  to {
+    transform: translateY(370px);
+  }
+}
+hr {
+  border: 1px;
+  box-shadow:  0px 5px 10px 3px black;
+  border-radius: 20px;
+  position: absolute;
+  top: 46%;
+  height: .9rem;
+  background-color:rgb(21, 120, 233);
+  animation: progressBar 2s ease-in-out;
+  z-index: 99999;
+}
+.loading {
+  font-family: "Permanent Marker";
+  color: white;
+  font-size: 20px;
+  letter-spacing: 3px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: transparent;
+  transform: translate(-50%, 20px);
+  z-index: 99999;
+}
+
+@keyframes firstDot {
+  to {
+    opacity: 1;
+  }
+}
+@keyframes secondDot {
+  to {
+    opacity: 1;
+  }
+}
+@keyframes thirdDot {
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fourthDot {
+  to {
+    opacity: 1;
+  }
+}
+@keyframes progressBar {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Door Effect</title>
+    <!-- <link rel="stylesheet" href="styles.css">
+      -->
+    <style>
+      body {
+    margin: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+#door {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+
+.door-panel {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background: #333;
+    transition: transform 1s;
+}
+
+.left {
+    left: 0;
+    transform-origin: left;
+}
+
+.right {
+    right: 0;
+    transform-origin: right;
+}
+
+.hidden {
+    display: none;
+}
+
+.door-open .left {
+    transform: translateX(-100%);
+}
+
+.door-open .right {
+    transform: translateX(100%);
+}
+
+#content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+    </style>
+</head>
+<body>
+    <div id="door">
+        <div class="door-panel left"></div>
+        <div class="door-panel right"></div>
+    </div>
+    <div id="content" class="hidden">
+        <h1>Welcome to the Home Page!</h1>
+        <p>This is the content that appears after the door opens.</p>
+    </div>
+    <button id="openDoor">Open Door</button>
+    <!-- <script src="script.js"></script> -->
+    
+</body>
+</html>

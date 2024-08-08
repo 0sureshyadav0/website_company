@@ -54,6 +54,7 @@
   <link rel="stylesheet" href="/blogs/style.css">
   <!-- Animation -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <!-- End of Animation -->
@@ -64,7 +65,8 @@
     <![endif]-->
   <!-- <script src="/blogs/data.js"></script> -->
   <!-- <script src="/blogs/script.js"></script> -->
-
+<link rel="stylesheet" href="./progressBar/reloadProgressBar.css">
+<script src="./progressBar/reloadProgressBar.js"></script>
   <script src="contact.js"></script>
   <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script type="text/javascript">
@@ -81,6 +83,14 @@
 </head>
 
 <body>
+ <!-- progressBar  -->
+ <div class="firstHalf"></div>
+ <div class="secondHalf"></div>
+ <hr>
+ <p class="loading">
+ Loading </p>
+  
+ 
   <!-- Hero Section, Background Image change in css -->
   <div id="top" class="hero background-overlay">
     <!-- Name & Description -->
@@ -136,7 +146,7 @@
           </div>
         </div>
         <!-- /.navbar-header -->
-        <select name="theme" id="theme">
+        <select nasme="theme" id="theme">
           <option value="blue" selected>Blue</option>
           <option value="red">Red</option>
           <option value="yellow">Yellow</option>
