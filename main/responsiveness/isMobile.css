@@ -1,0 +1,70 @@
+@media only screen and (min-width: 1000px) {
+    html {
+        font-size: 11px;
+    }
+   
+}
+@media only screen and (max-width: 1000px) {
+    html {
+        font-size: 13px;
+    }
+    #contentContainer #content{
+padding:1em;
+        margin-top: 10em;
+        margin-left: 8em;
+        height:40vh;
+       }
+}
+
+@media only screen and (max-width: 800px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    html {
+        font-size: 8px;
+    }
+    #contentContainer #content{
+
+        margin-top: 14em;
+        margin-left: 8em;
+       }
+}
+@media only screen and (max-width: 340px) {
+    html{
+        font-size: 8px;
+    }
+    #contactInfo{
+        margin-left: 0;
+        width:60%;
+    }
+.companyName img{
+    display: none;
+}
+   #contentContainer #content{
+    padding: .5em;
+    margin-top: 16em;
+    margin-left: 6em;
+    height:40vh;
+
+   }
+}
+@media only screen and (max-width: 300px) {
+html{
+    font-size: 6px;
+}
+#contactInfo{
+    width:80%;
+}
+    #contentContainer #content{
+     padding: .5em;
+     margin-top: 20em;
+     margin-left: 5em;
+     height:30vh;
+ 
+    }
+ }
+ 
+

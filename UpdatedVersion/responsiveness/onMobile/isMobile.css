@@ -1,0 +1,24 @@
+@media only screen and (max-width:440px){
+   html{
+    font-size: 15px;
+   }
+   
+}
+@media only screen and (max-width:300px){
+    html{
+     font-size: 10px;
+    }
+    .main-heading img{
+      height: 5px;
+    }
+ }
+ @media only screen and (max-width:300px){
+    
+    #buttons{
+        flex-direction: column;
+    }
+    .main-heading img{
+      height: 5px;
+      width:5px;
+    }
+ }

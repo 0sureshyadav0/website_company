@@ -1,0 +1,308 @@
+:root {
+    --borderColor: rgb(42, 2, 75);
+    --darkColor: rgb(25, 3, 44);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+html {
+    font-size: 15px;
+}
+
+#navBar {
+    position: absolute;
+    top: 0;
+    z-index: 5;
+    height: 4em;
+    width: 100%;
+    background-color: var(--borderColor);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo img {
+    height: 4em;
+    width: 4em;
+}
+
+.companyName {
+    padding-left: 1.5em;
+}
+
+.companyName img {
+    height: 4em;
+    width: 4em;
+    scale: 1.8;
+}
+
+.menuIcon {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 4em;
+    height: 4em;
+    right: 0;
+    cursor: pointer;
+}
+
+.menuIcon .topBar {
+    margin-top: .5em;
+    height: .2em;
+    background-color: purple;
+    width: 2em;
+    transition: .5s ease-in-out;
+}
+
+.menuIcon .topBarAfter {
+    rotate: 45deg;
+    transform: translate(3px, 4px);
+    transition: .5s ease-in-out;
+}
+
+.menuIcon .bottomBar {
+    margin: .5em;
+    height: .2em;
+    background-color: purple;
+    width: 2em;
+    transition: .5s ease-in-out;
+}
+
+.menuIcon .bottomBarAfter {
+    rotate: -45deg;
+    transform: translate(3px, -6px);
+    transition: .5s ease-in-out;
+}
+
+.menuIcon .iconName {
+    color: white;
+}
+
+#contactInfo {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 2em;
+    display: flex;
+    color: white;
+    align-items: center;
+    height: 2em;
+    width: 50%;
+    background-color: var(--darkColor);
+}
+
+#contactInfo p {
+    padding: .2em;
+}
+
+.sideMenu {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 88vh;
+    width: 0%;
+    background-color: var(--borderColor);
+    transition: .5s ease-in-out;
+    z-index: 1000;
+}
+
+.sideMenuAfter {
+    transition: .5s ease-in-out;
+    width: 30%;
+}
+
+#background {
+    position: absolute;
+    z-index: -100;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--darkColor);
+}
+
+#background img {
+    padding: 5em;
+    height: 3em;
+    width: 3em;
+    opacity: .2;
+}
+
+#background .img1 {
+    position: absolute;
+    left: 3px;
+    rotate: -45deg;
+}
+
+#background .img2 {
+    position: absolute;
+    top: 5em;
+    left: 10em;
+    rotate: 230deg;
+}
+
+#background .img3 {
+    position: absolute;
+    top: 26em;
+    left: 2em;
+}
+
+#background .img4 {
+    position: absolute;
+    top: 13em;
+    left: 2em;
+    rotate: 45deg;
+}
+
+#background .img5 {
+    position: absolute;
+    top: 20em;
+    left: 9em;
+    rotate: 45deg;
+}
+
+#background .img6 {
+    position: absolute;
+    right: 3em;
+    rotate: -45deg;
+}
+
+#background .img7 {
+    position: absolute;
+    top: 5em;
+    right: 10em;
+    rotate: 230deg;
+}
+
+#background .img8 {
+    position: absolute;
+    top: 26em;
+    right: 2em;
+}
+
+#background .img9 {
+    position: absolute;
+    top: 13em;
+    right: 2em;
+    rotate: 45deg;
+}
+
+#background .img10 {
+    position: absolute;
+    top: 20em;
+    right: 9em;
+    rotate: 45deg;
+}
+
+#leftMenu {
+    position: absolute;
+    height: 100vh;
+    width: 4em;
+    background-color: var(--borderColor);
+    display: flex;
+    flex-direction: column;
+}
+
+#leftMenu #leftMenuItems {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    height: 80vh;
+    width: 2em;
+    background-color: var(--darkColor);
+}
+
+#leftMenu #leftMenuItems .socialMedia {
+    padding-top: 2.5em;
+}
+
+#leftMenu #leftMenuItems .socialMedia p {
+    padding: .2em;
+}
+
+#rightMenu {
+    height: 100vh;
+    width: 4em;
+    position: absolute;
+    background-color: var(--borderColor);
+    right: 0;
+}
+
+#bottomMenu {
+    height: 4em;
+    width: 100%;
+    position: absolute;
+    background-color: var(--borderColor);
+    bottom: 0;
+}
+
+#contentContainer {
+    color: black;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    z-index: 11110;
+}
+
+#contentContainer #content {
+    width: 60%;
+    height: 30vh;
+    padding: 1em;
+    margin-top: 10em;
+    margin-left: 12em;
+    position: relative;
+    text-align: justify;
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.3em;
+    background-color: var(--borderColor);
+}
+
+#content::after,
+#content::before {
+    content: "";
+    position: absolute;
+    top: -.5em;
+    left: -.5em;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(red, blue, purple, red);
+    z-index: -1;
+    padding: .5em;
+    border-radius: 1em;
+}
+
+#content::before {
+    filter: blur(1.5);
+}
+
+#content #topic {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+#content #description {
+    padding-top: .5em;
+    padding-bottom: .5em;
+
+    font-size: 1em;
+}
+
+#content #readMore {
+    font-size: 1em;
+    position: absolute;
+    bottom: .5em;
+}
