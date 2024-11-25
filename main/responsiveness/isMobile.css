@@ -2,13 +2,22 @@
     html {
         font-size: 11px;
     }
-   
+    #contentContainer #content{
+
+        margin-top: 8em;
+        margin-left: 8em;
+       }
 }
 @media only screen and (max-width: 1000px) {
     html {
         font-size: 13px;
     }
-  
+
+    #contentContainer #content{
+
+        margin-top: 14em;
+        margin-left: 6em;
+       }
 }
 
 @media only screen and (max-width: 800px) {
@@ -41,23 +50,26 @@
    #contentContainer #content{
     padding: .5em;
     margin-top: 16em;
-    margin-left: 6em;
+    margin-left: 5em;
     height:40vh;
 
    }
 }
 @media only screen and (max-width: 300px) {
 html{
-    font-size: 6px;
+    font-size: 10px;
 }
 #contactInfo{
     width:80%;
 }
+#contentContainer{
+    height: 100vh;
+}
     #contentContainer #content{
      padding: .5em;
-     margin-top: 20em;
-     margin-left: 5em;
-     height:30vh;
+     margin-top: 6em;
+     margin-left: 4em;
+     height:60vh;
  
     }
  }
