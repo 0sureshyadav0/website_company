@@ -8,12 +8,7 @@
     html {
         font-size: 13px;
     }
-    #contentContainer #content{
-padding:1em;
-        margin-top: 10em;
-        margin-left: 8em;
-        height:40vh;
-       }
+  
 }
 
 @media only screen and (max-width: 800px) {
