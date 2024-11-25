@@ -67,7 +67,7 @@ nav {
 
 .menuIcon .topBarAfter {
     rotate: 45deg;
-    transform: translate(3px, 4px);
+    transform: translate(3px, 2px);
     transition: .5s ease-in-out;
 }
 
@@ -81,7 +81,7 @@ nav {
 
 .menuIcon .bottomBarAfter {
     rotate: -45deg;
-    transform: translate(3px, -6px);
+    transform: translate(3px, -3px);
     transition: .5s ease-in-out;
 }
 
@@ -109,7 +109,7 @@ nav {
     position: absolute;
     bottom: 0;
     right: 0;
-    height: 88vh;
+    height: 92vh;
     width: 0%;
     background-color: var(--borderColor);
     transition: .5s ease-in-out;
@@ -118,7 +118,7 @@ nav {
 
 .sideMenuAfter {
     transition: .5s ease-in-out;
-    width: 30%;
+    width: 50%;
 }
 
 #background {
