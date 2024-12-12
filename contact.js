@@ -10,7 +10,7 @@ function sendMessage () {
 
   Email.send({
     Host: 'smtp.elasticemail.com',
-    Username: 'suresh@appazon.com',
+    Username: 'hi@sureshyadav.info.np',
     Password: '781BCC35845536BE80D3578E704FB563102D',
     To: 'sureshyadav.info.np@gmail.com',
     From: email,
