@@ -52,12 +52,13 @@
   <link rel="stylesheet" href="./assets/css/responsive.css">
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="stylesheet" href="/blogs/style.css">
+
   <!-- Animation -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
   <!-- End of Animation -->
+
+
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -65,8 +66,6 @@
     <![endif]-->
   <!-- <script src="/blogs/data.js"></script> -->
   <!-- <script src="/blogs/script.js"></script> -->
-<link rel="stylesheet" href="./progressBar/reloadProgressBar.css">
-<script src="./progressBar/reloadProgressBar.js"></script>
   <script src="contact.js"></script>
   <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script type="text/javascript">
@@ -82,20 +81,15 @@
   </script>
 </head>
 
-<body>
- <!-- progressBar  -->
- <div class="firstHalf"></div>
- <div class="secondHalf"></div>
- <hr>
- <p class="loading">
- Loading </p>
+<body></body>
+
   
  
   <!-- Hero Section, Background Image change in css -->
   <div id="top" class="hero background-overlay">
     <!-- Name & Description -->
     <div class="hero-content">
-      <div data-aos="zoom-in" style="font-family:'Alkatra';">
+      <div data-aos="zoom-in" style="font-family:'Playfair Display';">
         <h1>I'm Suresh Yadav</h1>
       </div>
       <div data-aos="flip-left">
@@ -106,13 +100,19 @@
       </div>
       <div data-aos="fade-up">
         <p class="hero-job-desc">
-          "First learn all languages then develop your own."
+          'Always be eager to learn'
           <br><br><br>
-          <a id="resume-btn" href="/resume-main/index.html" style="padding:8px;color:white;border-radius:8px;"><span
-              class="blink">R E S U M E</span></a>
-          <a href="/ResponsiveBlogTemplate/index.html"
-            style="color:white;margin-left:3rem;border:2px solid white;padding:.5rem;border-radius:.5rem;">B L O G S</a>
-        </p>
+    <div style="display: flex;position: relative;justify-content: center;gap: 20rem;">
+       <a href="./resume-main/index.html">
+        <button>
+        <span class="text">R E S U M E</span>
+    </button >
+  </a>
+  <a href="/ResponsiveBlogTemplate/index.html">
+    <button id="blogButton">
+        <span class="text">B L O G</span>
+    </button></a>
+    </div>
         <!-- <p><br><a href="/Designs/index.html"
             style="color:white;border:2px solid white;padding:.5rem;border-radius:.5rem;">D E S I G N S</a></p> -->
       </div>

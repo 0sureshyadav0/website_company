@@ -16,8 +16,8 @@ body {
   /* background-image: linear-gradient(red,green); */
   background-image: linear-gradient(
     to top,
-    rgba(153, 11, 11, 0.5) 0%,
-    rgba(14, 224, 32, 0.5) 100%
+    rgba(67, 5, 92, 0.5) 0%,
+    rgba(164, 14, 224, 0.5) 100%
   );
   z-index: 999;
 }
@@ -28,8 +28,8 @@ body {
   top: 50vh;
   background-image: linear-gradient(
     to bottom,
-    rgba(153, 11, 11, 0.5) 0%,
-    rgba(14, 224, 32, 0.5) 100%
+    rgba(67, 5, 92, 0.5) 0%,
+    rgba(164, 14, 224, 0.5) 100%
   );
   z-index: 999;
 }
