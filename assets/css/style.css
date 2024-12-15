@@ -2767,7 +2767,7 @@ nav#primary-navigation.isDark {
 /* #onHover:hover {
 } */
 /* From Uiverse.io by cssbuttons-io */
-button {
+.headerButton {
   align-items: center;
   background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
   border: 0;
@@ -2791,12 +2791,12 @@ button {
   transition: all 0.3s;
 }
 
-button:active,
-button:hover {
+.headerButton:active,
+.headerButton:hover {
   outline: 0;
 }
 
-button span {
+.headerButton span {
   background-color: rgb(5, 6, 45);
   padding: 16px 24px;
   border-radius: 6px;
@@ -2805,10 +2805,10 @@ button span {
   transition: 300ms;
 }
 
-button:hover span {
+.headerButton:hover span {
   background: none;
 }
 
-button:active {
+.headerButton:active {
   transform: scale(0.9);
 }
