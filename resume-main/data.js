@@ -63,8 +63,8 @@ const skills = [
     icon: "<div class='flutter-icon'></div>",
     title: "Flutter",
     scale: 5,
-    tech: ["Dart", "pub", "Firebase", "Provider"],
-    lib: ["BLoC", "GetX", "Scoped Model"],
+    tech: ["Dart", "pub", "Firebase", "Provider","GetX"],
+    lib: ["BLoC", "Scoped Model"],
   },
   {
     icon: "fab fa-android",
