@@ -2767,7 +2767,19 @@ nav#primary-navigation.isDark {
 /* #onHover:hover {
 } */
 /* From Uiverse.io by cssbuttons-io */
+/* .headerButtons {
+  margin-left: 40px;
+  display: flex;
+  gap: 3em;
+} */
+.headerButtons {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 10em;
+}
 .headerButton {
+  padding: 15px;
   align-items: center;
   background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
   border: 0;
@@ -2781,7 +2793,6 @@ nav#primary-navigation.isDark {
   line-height: 1em;
   max-width: 100%;
   min-width: 140px;
-  padding: 3px;
   text-decoration: none;
   user-select: none;
   -webkit-user-select: none;
@@ -2811,4 +2822,17 @@ nav#primary-navigation.isDark {
 
 .headerButton:active {
   transform: scale(0.9);
+}
+@media only screen and (max-width: 600px) {
+  .headerButtons {
+    gap: 2em;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .headerButtons {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 2em;
+  }
 }
