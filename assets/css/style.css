@@ -2772,12 +2772,12 @@ nav#primary-navigation.isDark {
   display: flex;
   gap: 3em;
 } */
-#headerButtons {
+/* #headerButtons {
   justify-content: center;
   align-items: center;
   display: flex;
   gap: 10em;
-}
+} */
 .headerButton {
   align-items: center;
   background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
